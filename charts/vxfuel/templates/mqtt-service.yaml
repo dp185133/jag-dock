@@ -6,8 +6,17 @@ spec:
   selector:
     app: vxfuel
   ports:
-    - protocol: TCP
+    - name: mqtt
+      protocol: TCP
       port: 1883
-      targetPort: 1883
+      targetPort: 1884
+    - name: mqtt_tls
+      protocol: TCP
+      port: 8883
+      targetPort: 8883
+    - name: mqtt_ws
+      protocol: TCP
+      port: 9101
+      targetPort: 9101
       
       

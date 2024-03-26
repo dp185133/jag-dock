@@ -2,7 +2,9 @@
 
 require 'yaml'
 
-CHART_FILE = "charts/vxfuel/Chart.yaml"
+POD_NAME='vxtest'
+
+CHART_FILE = "charts/#{POD_NAME}/Chart.yaml"
 
 fc_chart = File.read(CHART_FILE)
 
@@ -26,9 +28,9 @@ if /(\d+\.\d+\.)(\d+)/.match(ver) then
 
   system <<SYSCOMMANDS
 
-helm package -d charts/docs --version #{newver} charts/vxfuel
+helm package -d charts/docs --version #{newver} charts/#{POD_NAME}
 helm repo index charts
-git add charts/docs/vxfuel-#{newver}.tgz
+git add charts/docs/#{POD_NAME}-#{newver}.tgz
 git commit -a -m "Increment to version #{newver}"
 git push
 
