@@ -3,4 +3,6 @@ old-stuff
 yocto/base/*mosquit*
 yocto/EmeraldForecourtServices*
 yocto/JAG_MQTT_Binaries*
+.\#*
+\#*\#
 
