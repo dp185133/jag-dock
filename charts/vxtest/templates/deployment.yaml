@@ -1,0 +1,41 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vxtest-deployment
+  labels:
+    app: vxtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vxtest
+  template:
+    metadata:
+      labels:
+        app: vxtest
+    spec:
+      hostname: testhost
+      volumes:
+      - name: vxfuel-persist
+        persistentVolumeClaim:
+          claimName: vxfuel-persist-claim
+      containers:
+      - name: vxtest
+        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxtest:0.1.5
+        command:
+        - "/usr/bin/tini"
+        args:
+        - "--"
+        - "/usr/bin/tail"
+        - "-F"
+        - "/dev/null"
+        volumeMounts:
+        - name: vxfuel-persist
+          mountPath: "/persist/"
+        env:
+        - name: PATH
+          value: "/usr/local/bin:/usr/bin:/bin:/sbin:/usr/sbin"
+      imagePullPolicy: Always
+      imagePullSecrets:
+      - name: edge-docker-pull-secret
