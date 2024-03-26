@@ -41,7 +41,7 @@ if /(.*?)\:(\d+\.\d+\.)(\d+)/.match(image) then
 
 docker image tag #{POD_NAME}:latest #{registry_path}
 docker push #{registry_path}
-./bump-version.rb #{POD_NAME}
+./bump-chart.rb #{POD_NAME}
 
 SYSCOMMANDS
   

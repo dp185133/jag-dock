@@ -22,14 +22,7 @@ spec:
           claimName: vxfuel-persist-claim
       containers:
       - name: vxtest
-        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxtest:0.1.5
-        command:
-        - "/usr/bin/tini"
-        args:
-        - "--"
-        - "/usr/bin/tail"
-        - "-F"
-        - "/dev/null"
+        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxtest:0.1.6
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"

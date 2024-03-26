@@ -6,7 +6,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y insta
 RUN apt-get install -y tini
 RUN apt-get install -y net-tools curl netcat
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
-CMD ["/bin/bash", ":0"]
+CMD ["/usr/bin/tail", "-F", "/dev/null"]
 

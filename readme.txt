@@ -1,4 +1,14 @@
 
+
+Container registry:
+
+          https://console.cloud.google.com/artifacts/docker/ret-edge-pltf-infra/us-east1/workloads
+
+
+
+
+========================================================================================
+
 How to build yocto root:
 
 * take .hddimg, loop mount it
