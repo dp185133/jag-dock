@@ -2,7 +2,9 @@
 
 require 'yaml'
 
-POD_NAME=ARGV[1] || 'vxtest'
+POD_NAME=ARGV[0] || 'vxfuel'
+
+puts "POD: #{POD_NAME}"
 
 DEPLOY_FILE = "charts/#{POD_NAME}/templates/deployment.yaml"
 
