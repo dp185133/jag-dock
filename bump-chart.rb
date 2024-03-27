@@ -37,6 +37,11 @@ git commit -a -m "Increment #{POD_NAME} version to #{newver}" && \
 git push
 
 SYSCOMMANDS
+
+  if not rc then
+    puts "PACKAGING UPDATE FAILED"
+    exit 1
+  end
   
 end
 

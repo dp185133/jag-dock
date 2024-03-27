@@ -27,7 +27,11 @@ spec:
         - "/usr/bin/tini"
         args:
         - "--"
-        - "/usr/bin/tail"
+        - "screen"
+        - "-e^w^w"
+        - "-h"
+        - "9999"
+        - "tail"
         - "-F"
         - "/dev/null"
         volumeMounts:
