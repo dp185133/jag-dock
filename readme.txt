@@ -14,8 +14,11 @@
 
 === To port forward on master machine:
 
-   k port-forward -n vx `fuelpod` 5903:5901        
+   k port-forward -n vx `fuelpod` 5903:5901
 
+=== Edge login
+
+   organization: edge-stage2-retail-xcvotg
 
 
 
