@@ -22,16 +22,16 @@ spec:
           claimName: vxfuel-persist-claim
       containers:
       - name: vxfuel
-        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxfuel:0.1.21
+        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxfuel:0.1.22
         command:
         - "/usr/bin/tini"
         args:
         - "--"
-        - "screen"
+        - screen
         - "-e^w^w"
         - "-h"
-        - "9999"
-        - "tail"
+        - '9999'
+        - tail
         - "-F"
         - "/dev/null"
         volumeMounts:
