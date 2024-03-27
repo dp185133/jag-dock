@@ -41,6 +41,8 @@ SYSCOMMANDS
   if not rc then
     puts "PACKAGING UPDATE FAILED"
     exit 1
+  else
+    puts "UPDATED #{POD_NAME} CHARTS. NEW VERSION: #{newver}"
   end
   
 end
