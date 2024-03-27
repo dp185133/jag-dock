@@ -27,14 +27,7 @@ spec:
         - "/usr/bin/tini"
         args:
         - "--"
-        - "screen"
-        - "-dm"
-        - "-e^w^w"
-        - "-h"
-        - "9999"
-        - "tail"
-        - "-F"
-        - "/dev/null"
+        - "/opt/config/docker-configure-run.sh"
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"

@@ -9,6 +9,5 @@ spec:
     - protocol: TCP
       port: 5901
       targetPort: 5901
-  type: NodePort
 
       
