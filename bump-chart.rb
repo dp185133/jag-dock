@@ -28,12 +28,12 @@ if /(\d+\.\d+\.)(\d+)/.match(ver) then
 
   File.open(CHART_FILE, 'w') { |f| f.write(fc_chart) }
 
-  system <<SYSCOMMANDS
+  rc = system <<SYSCOMMANDS
 
-helm package -d charts/docs --version #{newver} charts/#{POD_NAME}
-helm repo index charts
-git add charts/docs/#{POD_NAME}-#{newver}.tgz
-git commit -a -m "Increment #{POD_NAME} version to #{newver}"
+helm package -d charts/docs --version #{newver} charts/#{POD_NAME} && \
+helm repo index charts && \
+git add charts/docs/#{POD_NAME}-#{newver}.tgz && \
+git commit -a -m "Increment #{POD_NAME} version to #{newver}" && \
 git push
 
 SYSCOMMANDS
