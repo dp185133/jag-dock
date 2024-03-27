@@ -1,8 +1,20 @@
 
 
-Container registry:
+=== Container registry:
 
-          https://console.cloud.google.com/artifacts/docker/ret-edge-pltf-infra/us-east1/workloads
+   https://console.cloud.google.com/artifacts/docker/ret-edge-pltf-infra/us-east1/workloads
+
+=== To log in to cloud:
+
+   gcloud compute ssh --zone europe-west2-c zylevel0@s1-master-1 --tunnel-through-iap --project ret-edge-dsds-cfr
+
+=== To check helm chart status:
+
+   k get helmrelease -n flux-system vxfuel -o yaml
+
+=== To port forward on master machine:
+
+   k port-forward -n vx `fuelpod` 5903:5901        
 
 
 
