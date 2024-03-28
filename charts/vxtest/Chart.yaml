@@ -3,7 +3,7 @@ apiVersion: v2
 description: vxTest Helm chart for test pod
 name: vxtest
 type: application
-version: 0.1.13
-appVersion: 0.1.13
+version: 0.1.14
+appVersion: 0.1.14
 annotations:
   managed-by: ncr
