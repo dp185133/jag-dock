@@ -22,7 +22,7 @@ spec:
           claimName: vxfuel-persist-claim
       containers:
       - name: vxfuel
-        image: {{ .Values.global.repository }}/vxfuel:0.1.23
+        image: {{ .Values.global.repository }}/vxfuel:{{ .Values.global.imageVersion }}
         command:
         - "/usr/bin/tini"
         args:
