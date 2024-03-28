@@ -1,3 +1,4 @@
+---
 global:
   repository: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads
-  imageVersion: 0.1.23
+  imageVersion: 0.1.25

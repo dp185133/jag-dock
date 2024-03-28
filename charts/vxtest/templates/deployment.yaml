@@ -18,7 +18,7 @@ spec:
       hostname: testhost
       containers:
       - name: vxtest
-        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxtest:0.1.6
+        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxtest:0.1.11
         env:
         - name: PATH
           value: "/usr/local/bin:/usr/bin:/bin:/sbin:/usr/sbin"

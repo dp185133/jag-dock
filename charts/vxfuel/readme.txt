@@ -7,4 +7,3 @@ by running (e.g., if you have a "vxfuel:latest" image in your local Docker image
    curl https://localhost:5001/v2/vxfuel/manifests/latest
 
 
-
