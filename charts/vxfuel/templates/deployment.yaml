@@ -22,7 +22,7 @@ spec:
           claimName: vxfuel-persist-claim
       containers:
       - name: vxfuel
-        image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/vxfuel:0.1.23
+        image: {{ .Values.global.repository }}/vxfuel:0.1.23
         command:
         - "/usr/bin/tini"
         args:
@@ -39,6 +39,5 @@ spec:
         ports:
         - containerPort: 1883
         - containerPort: 5901
-      imagePullPolicy: Always
       imagePullSecrets:
       - name: edge-docker-pull-secret
