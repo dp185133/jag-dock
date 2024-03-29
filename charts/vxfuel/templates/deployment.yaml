@@ -38,6 +38,7 @@ spec:
           value: "/usr/local/bin:/usr/bin:/bin:/opt/cxoffice/bin:/sbin:/usr/sbin"
         ports:
         - containerPort: 1883
+        - containerPort: 9001
         - containerPort: 5901
       imagePullSecrets:
       - name: edge-docker-pull-secret

@@ -9,14 +9,11 @@ spec:
     - name: mqtt
       protocol: TCP
       port: 1883
-      targetPort: 1884
     - name: mqtt-tls
       protocol: TCP
       port: 8883
-      targetPort: 8883
     - name: mqtt-ws
       protocol: TCP
-      port: 9101
-      targetPort: 9101
+      port: 9001
       
       
