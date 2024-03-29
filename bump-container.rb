@@ -46,6 +46,11 @@ class ValuesFile < YamlFile
     super @@fname
   end
   
+
+  def full_registry_path
+    "#{@deploy['global']['repository']}/#{$POD_NAME}:#{@deploy['global']['imageVersion']}"
+  end
+  
   def imageVersion
     @deploy["global"]["imageVersion"]
   end
