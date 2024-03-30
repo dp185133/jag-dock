@@ -19,7 +19,7 @@ spec:
   client:
     unauthenticated: true
   server:
-    name: mqtt-server
+    name: {{ .Chart.Name }}-mqtt-server
 ---
 # Web Socket Setup
 apiVersion: policy.linkerd.io/v1beta1
