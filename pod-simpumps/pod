@@ -1,0 +1,50 @@
+#!/bin/env ruby
+# --*-ruby-*--
+cmd = ARGV[0]
+
+$PODNAME='simpumps'
+$IMG="img-#{$PODNAME}"
+$CTR="c-#{$PODNAME}"
+
+def pod_stop_and_rm
+  system <<COMMANDS
+docker stop #{$CTR}
+docker rm #{$CTR}
+COMMANDS
+end
+
+
+def find_simpumps_build
+  buildfile = nil
+  Dir.glob('SimPumps_*.zip') do |fname|
+    buildfile = fname
+  end
+  buildfile
+end
+
+case cmd
+when 'build'
+  simpumps_build = find_simpumps_build()
+  system <<COMMAND
+    rm -f config.tgz
+    tar -C ~/git/panther/panther-linux-install-bundler/build/panther2-bundle/opt/pcr/install -czf `pwd`/config.tgz panther2-jagless-linux-config
+    docker build --build-arg BUILDOF_SIMPUMPS=#{$simpumps_build} -t #{$IMG} .
+COMMAND
+when 'run'
+  cmd = <<COMMAND
+      docker run --init --name #{$CTR} -d -i -t #{$IMG}
+COMMAND
+  system cmd
+when 'stop'
+  pod_stop_and_rm()
+when 'clean'
+  pod_stop_and_rm()
+  system "docker image rm #{$IMG}:latest"
+when 'login'
+  system "docker exec -it #{$CTR} bash --login"
+else
+  puts "Recognized commands are 'build' and 'run'"
+end
+
+
+

@@ -1,0 +1,1 @@
+ps aux | egrep -v '/usr/| \[|/lib/systemd|/sbin/|system32|connman-app|matchbox|sleep | top | mpstat | iostat | winbindd| ps aux| dbus-launch| \-sh| avahi-daemon| gpg-agent| /bin/sh'
