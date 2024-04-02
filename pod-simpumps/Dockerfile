@@ -60,6 +60,16 @@ COPY ${BUILDOF_SIMPUMPS} /opt/pkg/
 COPY bin/msvcp140.dll /opt/pkg/
 COPY bin/mfc140.dll /opt/pkg/
 
+# Simpumps container won't have persistent volume, but some things
+# still expect to find FastPoint/Data (looks for SimpumpsJaglessJag there)
+# so make placeholder directories.
+mkdir -p /persist/data
+mkdir -p /persist/log
+
+
+COPY bin/netcat-traditional_1.10-47_amd64.deb /opt/pkg/
+RUN sudo dpkg -i --ignore-depends=libc6 /opt/pkg/netcat-traditional_1.10-47_amd64.deb
+
 # remove some large unnecessary files (from Bundle in Yocto base)
 RUN rm -f /opt/pcr/pkg/sitetrust*.deb*
 

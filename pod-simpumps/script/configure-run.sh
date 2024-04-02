@@ -76,11 +76,42 @@ cd /opt/pcr/install/panther2-jagless-linux-config
 cd /
 tar -zxf /opt/pcr/pkg/crossover-panther2*.tgz
 
+mkdir -p /opt/pcr/fifo
+mkfifo /opt/pcr/fifo/com1
+mkfifo /opt/pcr/fifo/com2
+mkfifo /opt/pcr/fifo/com3
+mkfifo /opt/pcr/fifo/com4
+
+cd /opt/pcr/fifo
+
+function sp_listen() { # port, file
+    while true; do
+        echo "NC listening on port $1 for $2"
+        nc.traditional -l -p $1 < $2 > $2
+    done
+}
+
+sp_listen 5000 com1&
+sp_listen 5001 com2&
+sp_listen 5002 com3&
+sp_listen 5003 com4&
+
+cd /opt/config
+
+. ./data/pcrfuel-config
+. ./bin/support.sh
+install_current_bablua
+install_current_labushka
+
+labushka add-ports-registry
+
+
+cp /opt/pcr/data/SimpumpsJaglessJag /fp/data/
+
 cd /fp/bin
 unzip /opt/pkg/SimPumps_*.zip
 
 /opt/cxoffice/bin/wine msiexec /qn /i SimPumps.msi "INSTALLDIR=C:/Program Files/Radiant/FastPoint/Bin" "USE_JAGLESSJAG=NO"
-
 
 /opt/cxoffice/bin/wine ./SimPumps.exe&
 
