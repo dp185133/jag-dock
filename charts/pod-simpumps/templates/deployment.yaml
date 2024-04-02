@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpumps-deployment
+  labels:
+    app: simpumps
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simpumps
+  template:
+    metadata:
+      labels:
+        app: simpumps
+    spec:
+      containers:
+      - name: simpumps
+        image: {{ .Values.global.repository }}/simpumps:{{ .Values.global.imageVersion }}
+        command:
+        - "/usr/bin/tini"
+        args:
+        - "--"
+        - "/opt/pcr/bin/configure-run.sh"
+        env:
+        - name: USER
+          value: pcrfuel
+        - name: PATH
+          value: "/usr/local/bin:/usr/bin:/bin:/opt/cxoffice/bin:/sbin:/usr/sbin"
+        ports:
+        - containerPort: 5901
+        - containerPort: 5150
+        - containerPort: 5151
+      imagePullSecrets:
+      - name: edge-docker-pull-secret
