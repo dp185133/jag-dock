@@ -42,7 +42,7 @@ USER=pcrfuel tightvncserver
 
 ln -s /home/pcrfuel/.wine/drive_c/Program\ Files/Radiant /home/pcrfuel/Radiant
 
-sudo ln -s ~/Radiant/FastPoint /fp
+sudo ln -s /home/pcrfuel/Radiant/FastPoint /fp
 
 ln -s ~/Radiant/FastPoint/Data /fp/data
 ln -s ~/Radiant/FastPoint/Bin  /fp/bin
