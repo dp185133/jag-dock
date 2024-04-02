@@ -70,8 +70,10 @@ COPY bin/mfc140.dll /opt/pkg/
 # Simpumps container won't have persistent volume, but some things
 # still expect to find FastPoint/Data (looks for SimpumpsJaglessJag there)
 # so make placeholder directories.
-mkdir -p /persist/data
-mkdir -p /persist/log
+RUN sudo mkdir -p /persist
+RUN sudo chown pcrfuel.pcrfuel /persist
+RUN mkdir -p /persist/data
+RUN mkdir -p /persist/log
 
 
 COPY bin/netcat-traditional_1.10-47_amd64.deb /opt/pkg/

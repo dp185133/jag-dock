@@ -35,6 +35,11 @@ when 'run'
       docker run --init --name #{$CTR} -d -i -t #{$IMG}
 COMMAND
   system cmd
+when 'squash'
+  system <<COMMAND
+    docker build --build-arg IMG_2_SQUASH=#{$IMG}:latest -t #{$IMG}:squashed"
+COMMAND
+COMMAND
 when 'stop'
   pod_stop_and_rm()
 when 'clean'
