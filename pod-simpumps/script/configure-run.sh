@@ -106,12 +106,15 @@ install_current_labushka
 labushka add-ports-registry
 
 
-cp /opt/pcr/data/SimpumpsJaglessJag /fp/data/
+cp /opt/pcr/data/SimpumpsJaglessJag.xml /fp/data/
 
 cd /fp/bin
 unzip /opt/pkg/SimPumps_*.zip
 
 /opt/cxoffice/bin/wine msiexec /qn /i SimPumps.msi "INSTALLDIR=C:/Program Files/Radiant/FastPoint/Bin" "USE_JAGLESSJAG=NO"
+
+cp /opt/pcr/data/SimpumpsJaglessJag.xml /fp/data
+lua /opt/pcr/bin/update-simpumps-config.lua /fp/data/SimpumpsJaglessJag.xml
 
 /opt/cxoffice/bin/wine ./SimPumps.exe&
 

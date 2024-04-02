@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimPumps>
+    <General>
+        <SetupName>PCS Lab</SetupName>
+        <SWAT>
+            <TcpPort>2000</TcpPort>
+        </SWAT>
+        <MSR>
+            <!-- Set the port number to 0 if not inuse -->
+            <Client>0</Client>
+            <Port>0</Port>
+            <Type>MSR</Type>
+            <Baud>9600</Baud>
+            <Data>7</Data>
+            <Stop>1</Stop>
+            <Parity>E</Parity>
+            <SubType>PDISR</SubType>
+        </MSR>
+        <Printer>
+            <!-- Set the port number to 0 if not inuse -->
+            <Client>0</Client>
+            <Port>0</Port>
+            <Type>Powered</Type>
+            <Baud>9600</Baud>
+            <Data>8</Data>
+            <Stop>1</Stop>
+            <Parity>N</Parity>
+        </Printer>
+    </General>
+    <Simulators>
+        <!-- Definition for a Wayne IXCAT JaglessJag -->
+        <WayneIXCAT>
+            <Name>Wayne IXCAT</Name>
+            <AutoRun>Yes</AutoRun>
+            <ICRMonitorOnly>No</ICRMonitorOnly>
+            <PumpMonitorOnly>No</PumpMonitorOnly>
+            <DefaultScript>Credit Sale</DefaultScript>
+
+            <VolumeName>Gallon</VolumeName>
+            <GradeName1>Regular</GradeName1>
+            <GradeName2>Plus</GradeName2>
+            <GradeName3>Super</GradeName3>
+
+            <MoneyDecimals>2</MoneyDecimals>
+            <VolumeDecimals>3</VolumeDecimals>
+            <PPUDecimals>3</PPUDecimals>
+            
+            <TierCount>2</TierCount>
+            <TierName1>Cash</TierName1>
+            <TierName2>Credit</TierName2>
+
+            <!-- Determines if Simpumps is the client or server. -->
+            <!-- 'No' for Simpumps as a server. -->
+            <!-- 'Yes' for Simpumps as a client. This is TLS. -->
+            <ClientMode>No</ClientMode>
+
+            <!-- P2PEEnabled: When set to Yes/True this will set the P2PE state to enabled on startup -->
+            <P2PEEnabled>False</P2PEEnabled>
+            <!-- P2PEType: Valid entries are None, PKI, TAVE, and BLUEFIN -->
+            <P2PEType>None</P2PEType>
+
+            <!-- The server SSL cert, when ClientMode == 'No' -->
+            <SSLCAServerCert>C:\Program Files\Radiant\FastPoint\Data\ca-chain.cert.pem</SSLCAServerCert>
+            <FuelControllerIP>192.168.6.100</FuelControllerIP>
+            <FuelControllerPort>5150</FuelControllerPort>
+
+            <PumpPort>
+                <Client>100</Client>
+                <Port>6</Port>
+                <Type>COM</Type>
+                <Baud>9600</Baud>
+                <Data>8</Data>
+                <Stop>1</Stop>
+                <Parity>O</Parity>
+                <ReadEcho>No</ReadEcho>
+                <DiscardWriteEcho>No</DiscardWriteEcho>
+                <ReplyTimeout>100</ReplyTimeout>
+            </PumpPort>
+            <ICRPort>
+                <Client>100</Client>
+                <Port>0</Port>
+                <Type>Powered</Type>
+                <Baud>9600</Baud>
+                <Data>8</Data>
+                <Stop>1</Stop>
+                <Parity>N</Parity>
+                <ReadEcho>No</ReadEcho>
+                <DiscardWriteEcho>No</DiscardWriteEcho>
+                <ReplyTimeout>300</ReplyTimeout>
+            </ICRPort>
+            <PatchPort>
+                <Patch>ICR</Patch>
+                <Client>2</Client>
+                <Port>0</Port>
+                <Type>Powered</Type>
+                <Baud>9600</Baud>
+                <Data>8</Data>
+                <Stop>1</Stop>
+                <Parity>N</Parity>
+                <ReadEcho>No</ReadEcho>
+                <DiscardWriteEcho>Yes</DiscardWriteEcho>
+                <ReplyTimeout>300</ReplyTimeout>
+            </PatchPort>
+
+            <!-- #################################### -->
+            <!-- Device definitions used by the pumps -->
+            <!-- #################################### -->
+            <Devices>
+                <Display>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Width></Width>
+                    <Height></Height>
+                    <Columns>20</Columns>
+                    <Rows>6</Rows>
+                    <BackColor>0, 0, 0</BackColor>
+                    <TextColor>0, 255, 0</TextColor>
+                    <GraphicSupport>No</GraphicSupport>
+                    <Width>6</Width>
+                    <Height>20</Height>
+
+                    <!-- DisplayType for Optic is either 'OPTIC 5' or 'OPTIC 12', For WayneIXCAT, it should be 'VGA' -->
+                    <DisplayType>VGA</DisplayType>
+                </Display>
+
+                <Printer>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <BufferSize>512</BufferSize>
+                    <Columns>21</Columns>
+                    <DotsPerLine>200</DotsPerLine>
+                    <CharWidth>8</CharWidth>
+                    <CharHeight>12</CharHeight>
+                    <SpaceHorizontal>1</SpaceHorizontal>
+                    <SpaceVertical>3</SpaceVertical>
+
+                    <!-- If LineReturn is 0, then LineFeed if used as both a LF/LR -->
+                    <LineFeed>10</LineFeed>
+                    <LineReturn>0</LineReturn>
+                    <ReverseOn>17</ReverseOn>
+                    <ReverseOff>18</ReverseOff>
+                    <Cut>30</Cut>
+                    <FeedCut>31</FeedCut>
+                </Printer>
+
+                <SoftKeys>
+                    <DeviceId>1</DeviceId>
+                    <Rows>4</Rows>
+                    <FaceColor>128, 128, 128</FaceColor>
+                    <Button>
+                        <DisplayRow>3</DisplayRow>
+                    </Button>
+                    <Button>
+                        <DisplayRow>4</DisplayRow>
+                    </Button>
+                    <Button>
+                        <DisplayRow>5</DisplayRow>
+                    </Button>
+                    <Button>
+                        <DisplayRow>6</DisplayRow>
+                    </Button>
+                </SoftKeys>
+
+                <Keypad>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Columns>5</Columns>
+                    <Rows>4</Rows>
+                    <FaceColor>128, 128, 128</FaceColor>
+                    <TextColor>255, 255, 255</TextColor>
+
+                    <Button>
+                        <XY>0,0</XY>
+                        <Text>Credit Inside</Text>
+                        <KeyValue>112</KeyValue>
+                        <FaceColor>80, 80, 80</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>1,0</XY>
+                        <Text>Clear</Text>
+                        <KeyValue>105</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>2,0</XY>
+                        <Text>0</Text>
+                        <KeyValue>48</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                        <Delmiter>Y</Delmiter>
+                    </Button>
+                    <Button>
+                        <XY>3,0</XY>
+                        <Text>Enter</Text>
+                        <KeyValue>13</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>4,0</XY>
+                        <Text>Cancel</Text>
+                        <KeyValue>27</KeyValue>
+                        <FaceColor>255, 255, 128</FaceColor>
+                        <TextColor>0, 0, 0</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                        <Delimiter>Y</Delimiter>
+                    </Button>
+                    <Button>
+                        <XY>0,1</XY>
+                        <Text>No</Text>
+                        <KeyValue>78</KeyValue>
+                        <FaceColor>128, 0, 0</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>1,1</XY>
+                        <Text>7</Text>
+                        <KeyValue>55</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>2,1</XY>
+                        <Text>8</Text>
+                        <KeyValue>56</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>3,1</XY>
+                        <Text>9</Text>
+                        <KeyValue>57</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>4,1</XY>
+                        <Text>Yes</Text>
+                        <KeyValue>89</KeyValue>
+                        <FaceColor>0, 128, 0</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>0,2</XY>
+                        <Text>Cash Outside</Text>
+                        <KeyValue>19</KeyValue>
+                        <FaceColor>160, 160, 160</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>1,2</XY>
+                        <Text>4</Text>
+                        <KeyValue>52</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>2,2</XY>
+                        <Text>5</Text>
+                        <KeyValue>53</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>3,2</XY>
+                        <Text>6</Text>
+                        <KeyValue>54</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>4,2</XY>
+                        <Text>Cash Inside</Text>
+                        <KeyValue>109</KeyValue>
+                        <FaceColor>220, 150, 50</FaceColor>
+                        <TextColor>0, 0, 0</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>0,3</XY>
+                        <Text>Debit</Text>
+                        <KeyValue>108</KeyValue>
+                        <FaceColor>0, 0, 128</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>1,3</XY>
+                        <Text>1</Text>
+                        <KeyValue>49</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>2,3</XY>
+                        <Text>2</Text>
+                        <KeyValue>50</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>3,3</XY>
+                        <Text>3</Text>
+                        <KeyValue>51</KeyValue>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                    <Button>
+                        <XY>4,3</XY>
+                        <Text>Credit</Text>
+                        <KeyValue>111</KeyValue>
+                        <FaceColor>0, 128, 0</FaceColor>
+                        <TextColor>255, 255, 255</TextColor>
+                        <Active>Y</Active>
+                        <Beep>Y</Beep>
+                    </Button>
+                </Keypad>
+
+                <MSR>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Tracks>2</Tracks>
+                    <IsTrackOneReader>Yes</IsTrackOneReader>
+                </MSR>
+                <CHIPCARD>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Tracks>2</Tracks>
+                    <IsTrackOneReader>Yes</IsTrackOneReader>
+                </CHIPCARD>
+                <CONTACTLESS>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Tracks>2</Tracks>
+                    <IsTrackOneReader>Yes</IsTrackOneReader>
+                </CONTACTLESS>
+				<BCS>
+                    <DeviceId>1</DeviceId>
+                    <Type>1</Type>
+                    <Name></Name>
+                    <Tracks>2</Tracks>
+                    <IsTrackOneReader>Yes</IsTrackOneReader>
+                </BCS>
+            </Devices>
+
+            <!-- ################################################## -->
+            <!-- The pump entries should be the last items defined. -->
+            <!-- ################################################## -->
+            <FuelPumps>
+                <Pump>
+                    <Id>1</Id>
+                    <Type>2</Type>
+                    <Name>Wayne 1</Name>
+
+                    <!-- When the DC is the server, this is the IP to connect to -->
+                    <!-- When the DC is a client, this is the IP of the interface to listen on for incoming connection -->
+                    <IPAddress>REPLACE_MYIPADDR</IPAddress>
+
+                    <!-- In DC Client mode, the port the DC shoudl connect do, defined in LHDevConfig -->
+                    <Port>5150</Port>
+
+                    <TerminalID>1</TerminalID>
+                    <GradeCount>3</GradeCount>
+                    <TierCount>3</TierCount>
+                    <DefaultTier>1</DefaultTier>
+                    <Calibration>7646</Calibration>
+                    <FillPulseTime>100</FillPulseTime>
+                    <VolumePerMinute>12</VolumePerMinute>
+                    <DisplayDeviceId>1</DisplayDeviceId>
+                    <PrinterDeviceId>1</PrinterDeviceId>
+                    <KeypadDeviceId>1</KeypadDeviceId>
+                    <LeftSoftKeysDeviceId>1</LeftSoftKeysDeviceId>
+                    <RightSoftKeysDeviceId>1</RightSoftKeysDeviceId>
+                    <MSRDeviceId>1</MSRDeviceId>
+                    <ChipCardDeviceId>1</ChipCardDeviceId>
+                    <ContactLessDeviceId>1</ContactLessDeviceId>
+					<BCSDeviceId>1</BCSDeviceId>
+                    <PumpPower>Yes</PumpPower>
+                    <ICRPower>Yes</ICRPower>
+                    <ICRMonitorOnly>No</ICRMonitorOnly>
+                    <PumpMonitorOnly>No</PumpMonitorOnly>
+                    <DefaultScript>Credit Sale</DefaultScript>
+                </Pump>
+                <Pump>
+                    <Id>2</Id>
+                    <Type>2</Type>
+                    <Name>Wayne 2</Name>
+
+                    <!-- When the DC is the server, this is the IP to connect to -->
+                    <!-- When the DC is a client, this is the IP of the interface to listen on for incoming connection -->
+                    <IPAddress>REPLACE_MYIPADDR</IPAddress>
+
+                    <!-- In DC Client mode, the port the DC shoudl connect do, defined in LHDevConfig -->
+                    <Port>5151</Port>
+
+                    <TerminalID>2</TerminalID>
+                    <GradeCount>3</GradeCount>
+                    <TierCount>3</TierCount>
+                    <DefaultTier>1</DefaultTier>
+                    <Calibration>7646</Calibration>
+                    <FillPulseTime>100</FillPulseTime>
+                    <VolumePerMinute>12</VolumePerMinute>
+                    <DisplayDeviceId>1</DisplayDeviceId>
+                    <PrinterDeviceId>1</PrinterDeviceId>
+                    <KeypadDeviceId>1</KeypadDeviceId>
+                    <LeftSoftKeysDeviceId>1</LeftSoftKeysDeviceId>
+                    <RightSoftKeysDeviceId>1</RightSoftKeysDeviceId>
+                    <MSRDeviceId>1</MSRDeviceId>
+                    <ChipCardDeviceId>1</ChipCardDeviceId>
+                    <ContactLessDeviceId>1</ContactLessDeviceId>
+					<BCSDeviceId>1</BCSDeviceId>
+                    <PumpPower>Yes</PumpPower>
+                    <ICRPower>Yes</ICRPower>
+                    <ICRMonitorOnly>No</ICRMonitorOnly>
+                    <PumpMonitorOnly>No</PumpMonitorOnly>
+                    <DefaultScript>Credit Sale</DefaultScript>
+                </Pump>
+            </FuelPumps>
+            <!-- make sure these prompts are the same in the IcarusDCS.xml file on jag -->
+			<SecurePrompts>
+                <Prompt number="1" retrynumber="0" language="0">PLEASE ENTER NUMBER</Prompt>
+				<Prompt number="2" retrynumber="0" language="0">PLEASE RE-ENTER NUMBER</Prompt>
+                <Prompt number="3" retrynumber="0" language="0">PLEASE ENTER CHOICE</Prompt>
+				<Prompt number="4" retrynumber="0" language="0">PLEASE RE-ENTER CHOICE</Prompt>
+                <Prompt number="5" retrynumber="0" language="0">PLEASE ENTER CAR WASH NUMBER</Prompt>
+				<Prompt number="6" retrynumber="0" language="0">PLEASE RE-ENTER CAR WASH NUMBER</Prompt>
+                <Prompt number="7" retrynumber="0" language="0">PLEASE ENTER SECURITY CODE</Prompt>
+				<Prompt number="8" retrynumber="0" language="0">PLEASE RE-ENTER SECURITY CODE</Prompt>
+                <Prompt number="9" retrynumber="0" language="0">PLEASE ENTER ZIP CODE</Prompt>
+				<Prompt number="10" retrynumber="0" language="0">PLEASE RE-ENTER ZIP CODE</Prompt>
+                <Prompt number="11" retrynumber="0" language="0">PLEASE ENTER VEHICLE NUMBER</Prompt>
+				<Prompt number="12" retrynumber="0" language="0">PLEASE RE-ENTER VEHICLE NUMBER</Prompt>
+                <Prompt number="13" retrynumber="0" language="0">PLEASE ENTER REFERENCE NUMBER</Prompt>
+				<Prompt number="14" retrynumber="0" language="0">PLEASE RE-ENTER REFERENCE NUMBER</Prompt>
+                <Prompt number="15" retrynumber="0" language="0">PLEASE ENTER ODOMETER READING</Prompt>
+				<Prompt number="16" retrynumber="0" language="0">PLEASE RE-ENTER ODOMETER READING</Prompt>
+                <Prompt number="17" retrynumber="0" language="0">PLEASE ENTER DRIVER NUMBER</Prompt>
+				<Prompt number="18" retrynumber="0" language="0">PLEASE RE-ENTER DRIVER NUMBER</Prompt>
+                <Prompt number="19" retrynumber="0" language="0">PLEASE ENTER PIN</Prompt>
+				<Prompt number="20" retrynumber="0" language="0">PLEASE RE-ENTER PIN</Prompt>
+                <Prompt number="21" retrynumber="0" language="0">PLEASE ENTER EMPLOYEE NUMBER</Prompt>
+				<Prompt number="22" retrynumber="0" language="0">PLEASE RE-ENTER EMPLOYEE NUMBER</Prompt>
+                <Prompt number="23" retrynumber="0" language="0">PLEASE ENTER AMOUNT</Prompt>
+				<Prompt number="24" retrynumber="0" language="0">PLEASE RE-ENTER AMOUNT</Prompt>
+                <Prompt number="24" retrynumber="0" language="0">THANK YOU</Prompt>
+                <Prompt number="25" retrynumber="0" language="0">PRESS ENTER</Prompt>
+                <Prompt number="26" retrynumber="0" language="0">PLEASE REENTER PURCHASE ORDER NUMBER</Prompt>
+                <Prompt number="27" retrynumber="0" language="0">PLEASE WAIT</Prompt>
+                <Prompt number="28" retrynumber="0" language="0">PLEASE WAIT</Prompt>
+                <Prompt number="29" retrynumber="0" language="0">PLEASE ENTER PURCHASE ORDER NUMBER</Prompt>
+                <Prompt number="30" retrynumber="0" language="0">SCAN CARD/ENTER PHONE#</Prompt>
+                <Prompt number="31" retrynumber="0" language="0">PRESS ENTER</Prompt>
+                <Prompt number="32" retrynumber="0" language="0">PLEASE RE-ENTER CAR WASH NUMBER</Prompt>
+                <Prompt number="34" retrynumber="0" language="0">PLEASE ENTER CONTROL NUMBER</Prompt>
+                <Prompt number="35" retrynumber="0" language="0">PLEASE RE-ENTER CONTROL NUMBER</Prompt>
+                <Prompt number="36" retrynumber="0" language="0">PLEASE RE-ENTER NUMBER</Prompt>
+                <Prompt number="37" retrynumber="0" language="0">PLEASE ENTER CHOICE</Prompt>
+                <Prompt number="38" retrynumber="0" language="0">PLEASE RE-ENTER CHOICE</Prompt>
+                <Prompt number="39" retrynumber="0" language="0">SCAN CARD/ENTER PHONE#</Prompt>
+                <Prompt number="40" retrynumber="0" language="0">RE-SCAN CARD/ENTER PHONE#</Prompt>
+                <Prompt number="41" retrynumber="0" language="0">PLEASE ENTER PURCHASE ORDER NUMBER</Prompt>
+                <Prompt number="42" retrynumber="0" language="0">PLEASE RE-ENTER PURCHASE ORDER NUMBER</Prompt>
+                <Prompt number="43" retrynumber="0" language="0">PLEASE ENTER NEW PIN</Prompt>
+                <Prompt number="44" retrynumber="0" language="0">PLEASE RE-ENTER NEW PIN</Prompt>
+                <Prompt number="45" retrynumber="0" language="0">SWIPE CARD OR ENTER PIN</Prompt>
+                <Prompt number="46" retrynumber="0" language="0">SWIPE CARD OR ENTER PIN</Prompt>
+                <Prompt number="47" retrynumber="0" language="0">PLEASE RE-ENTER CHARGE TO</Prompt>
+                <Prompt number="48" retrynumber="0" language="0">PLEASE ENTER CHARGE TO</Prompt>
+                <Prompt number="49" retrynumber="0" language="0">PLEASE RE-ENTER PIN OR PRESS CANCEL</Prompt>
+                <Prompt number="50" retrynumber="0" language="0">PLEASE ENTER PIN OR PRESS CANCEL</Prompt>
+                <Prompt number="51" retrynumber="0" language="0">RECEIPT PRINTING</Prompt>
+                <Prompt number="52" retrynumber="0" language="0">RECEIPT PRINTING</Prompt>
+                <Prompt number="53" retrynumber="0" language="0">ENTER POINTS TO USE</Prompt>
+                <Prompt number="54" retrynumber="0" language="0">REMOVE CARD</Prompt>
+                <Prompt number="55" retrynumber="0" language="0">PRINTER ERROR</Prompt>
+                <Prompt number="56" retrynumber="0" language="0">RE-ENTER PIN OR    PRESS CANCEL</Prompt>
+                <Prompt number="57" retrynumber="0" language="0">ENTER PIN OR    PRESS CANCEL</Prompt>
+                <Prompt number="58" retrynumber="0" language="0">RE-INSERT CARD</Prompt>
+                <Prompt number="59" retrynumber="0" language="0">PLEASE ENTER NEW PIN</Prompt>
+                <Prompt number="60" retrynumber="0" language="0">PLEASE RE-ENTER NEW PIN</Prompt>
+                <Prompt number="61" retrynumber="0" language="0">PROCESSING KEY</Prompt>
+                <Prompt number="62" retrynumber="0" language="0">PROCESSING KEY</Prompt>
+                <Prompt number="63" retrynumber="0" language="0">INVALID KEY</Prompt>
+                <Prompt number="64" retrynumber="0" language="0">INVALID KEY</Prompt>
+                <Prompt number="65" retrynumber="0" language="0">RE-ENTER ID</Prompt>
+                <Prompt number="66" retrynumber="0" language="0">RE-ENTER ID</Prompt>
+                <Prompt number="67" retrynumber="0" language="0">PLEASE RE-ENTER VEHICLE ID</Prompt>
+                <Prompt number="68" retrynumber="0" language="0">PLEASE ENTER VEHICLE ID</Prompt>
+                <Prompt number="69" retrynumber="0" language="0">RE-ENTER ID</Prompt>
+                <Prompt number="70" retrynumber="0" language="0">ENTER ID</Prompt>
+                <Prompt number="71" retrynumber="0" language="0">RE-ENTER WORK ORDER</Prompt>
+                <Prompt number="72" retrynumber="0" language="0">ENTER WORK ORDER</Prompt>
+                <Prompt number="73" retrynumber="0" language="0">PLEASE ENTER    ACCESS CODE</Prompt>
+                <Prompt number="74" retrynumber="0" language="0">ENTER HUB</Prompt>
+                <Prompt number="75" retrynumber="0" language="0">PLEASE RE-ENTER PASSCODE</Prompt>
+                <Prompt number="76" retrynumber="0" language="0">PLEASE ENTER PASSCODE</Prompt>
+                <Prompt number="77" retrynumber="0" language="0">RE-ENTER TRAILER NUMBER</Prompt>
+                <Prompt number="78" retrynumber="0" language="0">ENTER TRAILER NUMBER</Prompt>
+            </SecurePrompts>
+        </WayneIXCAT>
+    </Simulators>
+</SimPumps>

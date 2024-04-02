@@ -18,7 +18,10 @@ EXPOSE 5901
 
 COPY script/profile /etc/profile
 run mkdir -p /opt/pcr/data && chown -R 701:701 /opt
-COPY data/vnc-passwd /opt/pcr/data
+COPY data/vnc-passwd /opt/pcr/data/
+
+
+COPY data/SimpumpsJaglessJag.xml /opt/pcr/data/
 
 
 ###################################################################################################
@@ -36,6 +39,10 @@ RUN rm -f config.tgz
 RUN mkdir -p /usr/local/bin
 RUN chown pcrfuel.pcrfuel /usr/local/bin
 COPY script/psnot /usr/local/bin/psnot
+
+RUN mkdir -p /opt/pcr/bin/
+COPY script/update-simpumps-config.lua /opt/pcr/bin/
+COPY data/SimpumpsJaglessJag.xml /opt/pcr/data/
 
 # this is some ad-hoc crap here.  Somehow radstart expects these directories,
 # maybe because we should have run Radio install before we run
