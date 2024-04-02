@@ -37,8 +37,7 @@ COMMAND
   system cmd
 when 'squash'
   system <<COMMAND
-    docker build --build-arg IMG_2_SQUASH=#{$IMG}:latest -t #{$IMG}:squashed"
-COMMAND
+    docker build --build-arg IMG_2_SQUASH=#{$IMG}:latest -t #{$IMG}:squashed -f ../squashed/Dockerfile .
 COMMAND
 when 'stop'
   pod_stop_and_rm()
