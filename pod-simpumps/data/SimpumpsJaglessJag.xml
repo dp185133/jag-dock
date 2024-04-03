@@ -66,7 +66,8 @@
 
             <PumpPort>
                 <Client>100</Client>
-                <Port>6</Port>
+                <UseRadio>No</UseRadio>
+                <Port>1</Port>
                 <Type>COM</Type>
                 <Baud>9600</Baud>
                 <Data>8</Data>
