@@ -3,7 +3,7 @@
 cmd = ARGV[0]
 
 $PODNAME='simpumps'
-$IMG="pod-#{$PODNAME}"
+$IMG="#{$PODNAME}"
 $CTR="c-#{$PODNAME}"
 
 def pod_stop_and_rm

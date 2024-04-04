@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: simpumps
-        image: {{ .Values.global.repository }}/pod-simpumps:{{ .Values.global.imageVersion }}
+        image: {{ .Values.global.repository }}/simpumps:{{ .Values.global.imageVersion }}
         command:
         - "/usr/bin/tini"
         args:
