@@ -49,6 +49,16 @@
       "AppName": "Icarus.exe",
       "CmdLine": "",
       "Environment": ""
+    },
+    {
+      "ProcessNode": 100,
+      "HostNode": 100,
+      "InitDelay": 5000,
+      "Flags": 0,
+      "ProgName": "ConfigurationService",
+      "AppName": "ConfigurationService.exe",
+      "CmdLine": "",
+      "Environment": ""
     }
   ],
   "RelayNodeTypeRecs": [
