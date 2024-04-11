@@ -1,0 +1,43 @@
+#!/bin/env ruby
+# --*-ruby-*--
+cmd = ARGV[0]
+
+$PODNAME='vxfuel-init'
+$IMG="#{$PODNAME}"
+$CTR="c-#{$PODNAME}"
+
+def pod_stop_and_rm
+  system <<COMMANDS
+docker stop #{$CTR}
+docker rm #{$CTR}
+COMMANDS
+end
+
+
+case cmd
+when 'build'
+  system <<COMMAND
+    docker build -t #{$IMG} .
+COMMAND
+when 'run'
+  cmd = <<COMMAND
+      docker run --init --name #{$CTR} -d -i -t #{$IMG}
+COMMAND
+  system cmd
+when 'squash'
+  system <<COMMAND
+    docker build --build-arg IMG_2_SQUASH=#{$IMG}:latest -t #{$IMG}:squashed -f ../squashed/Dockerfile .
+COMMAND
+when 'stop'
+  pod_stop_and_rm()
+when 'clean'
+  pod_stop_and_rm()
+  system "docker image rm #{$IMG}:latest"
+when 'login'
+  system "docker exec -it #{$CTR} bash --login"
+else
+  puts "Recognized commands are 'build' and 'run'"
+end
+
+
+
