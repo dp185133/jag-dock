@@ -29,15 +29,14 @@ spec:
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"
+      containers:
       - name: fluentbit #Sidecar Fluentbit container for log scraping
         image: cr.fluentbit.io/fluent/fluent-bit:2.2.2
-        restartPolicy: Always
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"
         - name: fluentbit-config
           mountPath: /fluent-bit/etc/
-      containers:
       - name: vxfuel
         image: {{ .Values.global.repository }}/vxfuel:{{ .Values.global.imageVersion }}
         command:
