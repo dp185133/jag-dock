@@ -1,0 +1,22 @@
+# TCP Setup
+apiVersion: policy.linkerd.io/v1beta1
+kind: Server
+metadata:
+  name: {{ .Chart.Name }}-wayneix-opt-1-service
+  namespace: emissary
+spec:
+  port: {{ .Values.global.optService.opt1ExternalPort }}
+  podSelector:
+    matchLabels: {} # every pod
+  proxyProtocol: opaque
+---
+apiVersion: policy.linkerd.io/v1beta1
+kind: Server
+metadata:
+  name: {{ .Chart.Name }}-wayneix-opt-2-service
+  namespace: emissary
+spec:
+  port: {{ .Values.global.optService.opt2ExternalPort }}
+  podSelector:
+    matchLabels: {} # every pod
+  proxyProtocol: opaque

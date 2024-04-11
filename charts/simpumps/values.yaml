@@ -2,3 +2,6 @@
 global:
   repository: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads
   imageVersion: 0.1.3
+  optService:
+    opt1ExternalPort: 5150
+    opt2ExternalPort: 5151

@@ -1,0 +1,20 @@
+
+apiVersion: policy.linkerd.io/v1beta1
+kind: Server
+metadata:
+  name: {{ .Chart.Name }}-wayneix-opt-1-service
+spec:
+  port: 5150
+  podSelector:
+    matchLabels: {} # every pod in namespace
+  proxyProtocol: opaque
+---
+apiVersion: policy.linkerd.io/v1beta1
+kind: ServerAuthorization
+metadata:
+  name: {{ .Chart.Name }}-wayneix-opt-2-service
+spec:
+  port: 5151
+  podSelector:
+    matchLabels: {} # every pod in namespace
+  proxyProtocol: opaque

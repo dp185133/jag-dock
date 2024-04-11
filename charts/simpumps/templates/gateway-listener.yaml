@@ -1,0 +1,27 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Listener
+metadata:
+  name: {{ .Chart.Name }}-listener-wayneix-opt-1-service
+  namespace: emissary
+spec:
+  hostBinding:
+    namespace:
+      from: ALL
+  port: {{ .Values.global.optService.opt1ExternalPort }}
+  protocolStack:
+  - TCP
+  securityModel: INSECURE
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Listener
+metadata:
+  name: {{ .Chart.Name }}-listener-wayneix-opt-2-service
+  namespace: emissary
+spec:
+  hostBinding:
+    namespace:
+      from: ALL
+  port: {{ .Values.global.optservice.opt2ExternalPort }}
+  protocolStack:
+  - TCP
+  securityModel: INSECURE

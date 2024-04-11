@@ -1,0 +1,17 @@
+apiVersion: getambassador.io/v3alpha1
+kind: TCPMapping
+metadata:
+  name: {{ .Chart.Name }}-wayneix-opt-1-service
+  namespace: vx
+spec:
+  port: {{ .Values.global.optService.opt1ExternalPort }}
+  service: opt-service:5150
+---
+apiVersion: getambassador.io/v3alpha1
+kind: TCPMapping
+metadata:
+  name: {{ .Chart.Name }}--wayneix-opt-2-service
+  namespace: vx
+spec:
+  port: {{ .Values.global.optService.opt2ExternalPort }}
+  service: opt-service:5151
