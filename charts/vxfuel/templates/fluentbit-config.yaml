@@ -69,6 +69,6 @@ kind: ConfigMap
 metadata:
   creationTimestamp: "2024-04-01T21:34:59Z"
   name: fluentbit-config
-  namespace: default
+  namespace: vx
   resourceVersion: "1045907"
   uid: c17bd544-341f-4b02-8d10-389a8c872b7a

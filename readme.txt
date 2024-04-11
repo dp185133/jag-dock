@@ -18,6 +18,7 @@
 
 === Edge login
 
+   https://stage2.edge-preprod.dev/login
    organization: edge-stage2-retail-xcvotg
 
 
