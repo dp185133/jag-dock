@@ -25,7 +25,7 @@ spec:
           name: fluentbit-config
       initContainers:
       - name: vxfuel-init # Sidecar Init container to initialize environment, e.g. create subfolders on mounted volume.
-        image: {{ .Values.global.repository }}/vxfuel-init:0.1.0
+        image: {{ .Values.global.repository }}/vxfuel-init:0.1.1
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"
