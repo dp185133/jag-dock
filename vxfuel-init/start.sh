@@ -6,4 +6,3 @@ mkdir -p /persist/fluentbit/db
 mkdir -p /persist/fluentbit/log
 echo "Finished: Create fluentbit folders"
 
-tail -F /dev/null
