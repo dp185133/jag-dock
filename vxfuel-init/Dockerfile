@@ -5,6 +5,7 @@ FROM alpine:3.19.1
 
 #Copy script to tail googlelog.json
 COPY start.sh /usr/local/bin
+RUN chmod a+x /usr/local/bin/start.sh
 
 WORKDIR /usr/local/bin
 
