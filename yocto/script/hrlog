@@ -19,14 +19,19 @@ local function printFormattedJson(msg)
    local day, time = string.match(msg['@t'], '%d%d%d%d%-(%d%d%-%d%d).(%d%d:%d%d:%d%d%.%d%d%d)')
    --      local day = string.match(msg['@t'], '(%d%d%-%d%d)')
    local textMessage = msg['@mt']
+
+   local module = ''
+   if msg.module then
+      module = msg.module .. ' '
+   end
    
    if day then
       local lg_level = msg['@rpos_ll'] or 0
       local lg_type = msg['@l'] or ''
       if numThreadIds > 1 then
-         print(string.format("%s %s l%02d t%02X %5.5s %s", day, time, lg_level, (tid or 0), lg_type, textMessage))
+         print(string.format("%s %s l%02d t%02X %5.5s %s%s", day, time, lg_level, (tid or 0), lg_type, module, textMessage))
       else
-         print(string.format("%s %s l%02d %5.5s %s", day, time, lg_level, lg_type, textMessage))
+         print(string.format("%s %s l%02d %5.5s %s%s", day, time, lg_level, lg_type, module, textMessage))
       end
    end
 end
