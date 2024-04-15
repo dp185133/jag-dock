@@ -1,0 +1,151 @@
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    virtualmachine.ncr.com/name: {{ .Release.Name }}
+    virtualmachine.ncr.com/version: {{ .Chart.Version }}
+    virtualmachine.ncr.com/created: {{ now | date "2006-01-02T15:04:05" }}
+spec:
+  dataVolumeTemplates:
+  {{- if .Values.drivers.mount }}
+  - metadata:
+      name: {{ .Release.Name }}-virtio-drivers
+      namespace: {{ .Release.Namespace }}
+      annotations:
+        virtualmachine.ncr.com/name: {{ .Release.Name }}
+        virtualmachine.ncr.com/version: {{ .Chart.Version }}
+        virtualmachine.ncr.com/created: {{ now | date "2006-01-02T15:04:05" }}
+        {{- /* cannot mesh importer pods yet https://github.com/kubevirt/containerized-data-importer/issues/3012 */}}
+        linkerd.io/inject: disabled
+        cdi.kubevirt.io/storage.bind.immediate.requested: "true"
+    spec:
+      pvc:
+        accessModes:
+        - ReadWriteOnce
+        storageClassName: local-path
+        resources:
+          requests:
+            storage: 1Gi
+      source:
+        registry:
+          url: "docker://us-east1-docker.pkg.dev/ret-edge-pltf-infra/thirdparty/quay.io/kubevirt/virtio-container-disk@sha256:5b99c78ed831401048e72d72f9ec805710ee7625131fd9ad277b38ab1e67cfb9"
+          pullMethod: node
+  {{- end }}
+  {{- range $v := .Values.disks }}
+  - metadata:
+      name: {{ $.Release.Name }}-{{ $v.name }}
+      namespace: {{ $.Release.Namespace }}
+      annotations:
+        virtualmachine.ncr.com/name: {{ $.Release.Name }}
+        virtualmachine.ncr.com/version: {{ $.Chart.Version }}
+        virtualmachine.ncr.com/created: {{ now | date "2006-01-02T15:04:05" }}
+        {{- /* cannot mesh importer pods yet https://github.com/kubevirt/containerized-data-importer/issues/3012 */}}
+        linkerd.io/inject: disabled
+        cdi.kubevirt.io/storage.bind.immediate.requested: "true"
+    spec:
+      pvc:
+        {{- if eq $v.storageClassName "linstor-rwx-storage" }}
+        volumeMode: Block
+        accessModes:
+        - ReadWriteMany
+        {{- else }}
+        accessModes:
+        - ReadWriteOnce
+        {{- end }}
+        storageClassName: {{ $v.storageClassName }}
+        resources:
+          requests:
+            storage: {{ $v.size }}
+      {{- if $v.image }}
+      source:
+        registry:
+          url: docker://{{ $v.image }}
+          pullMethod: node
+      {{- else }}
+      source:
+        blank: {}
+      {{- end }}
+  {{- end }}
+  running: {{ .Values.running }}
+  template:
+    metadata:
+      annotations:
+        virtualmachine.ncr.com/name: {{ .Release.Name }}
+        virtualmachine.ncr.com/version: {{ .Chart.Version }}
+        virtualmachine.ncr.com/created: {{ now | date "2006-01-02T15:04:05" }}
+        {{- if .Values.mesh.enabled }}
+        sidecar.istio.io/inject: "true"
+        linkerd.io/inject: enabled
+        {{- else }}
+        sidecar.istio.io/inject: "false"
+        linkerd.io/inject: disabled
+        {{- end }}
+        config.linkerd.io/proxy-log-level: {{ .Values.mesh.logLevel }}
+        {{- if .Values.rdp.enabled }}
+        config.linkerd.io/skip-inbound-ports: "3389"
+        {{- end }}
+        {{- /* app armor unconfined https://github.com/kubevirt/kubevirt/issues/11471 */}}
+        container.apparmor.security.beta.kubernetes.io/compute: unconfined 
+      labels:
+        kubevirt.io/domain: {{ .Release.Name }}
+    spec:
+      domain:
+        cpu:
+          cores: {{ .Values.cpuCores }}
+        devices:
+          clientPassthrough: {}
+          disks:
+          - disk:
+            name: serviceaccountdisk
+          {{- if .Values.drivers.mount }}
+          - cdrom:
+              bus: sata
+            name: virtiocontainerdisk
+          {{- end }}
+          {{- range $v := .Values.disks }}
+          - name: {{ $v.name }}
+            {{- if eq $v.type "disk" }}
+            disk:
+            {{- else }}
+            cdrom:
+            {{- end }}
+              bus: {{ $v.bus }}
+            bootOrder: {{ $v.bootOrder }}
+          {{- end }}
+          interfaces:
+          - name: default
+            {{- if eq .Values.network.type "passt" }}
+            binding:
+              name: passt
+            {{- else }}
+            masquerade: {}
+            {{- end }}
+            {{- with .Values.network.ports }}
+            ports:
+                {{- toYaml . | nindent 12 }}
+            {{- end }}
+        machine:
+          type: {{ .Values.machineType }}
+        {{- with .Values.resources }}
+        resources:
+            {{- toYaml . | nindent 10 }}
+        {{- end }}
+      networks:
+      - name: default
+        pod: {}
+      volumes:
+      - name: serviceaccountdisk
+        serviceAccount:
+          serviceAccountName: {{ .Release.Name }}
+      {{- if .Values.drivers.mount }}
+      - name: virtiocontainerdisk
+        dataVolume:
+          name: {{ .Release.Name }}-virtio-drivers
+      {{- end }}
+      {{- range $v := .Values.disks }}
+      - name: {{ $v.name }}
+        dataVolume:
+          name: {{ $.Release.Name }}-{{ $v.name }}
+      {{- end }}

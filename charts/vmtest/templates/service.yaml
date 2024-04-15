@@ -1,0 +1,25 @@
+{{ if .Values.rdp.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-rdp
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    virtualmachine.ncr.com/name: {{ .Release.Name }}
+    virtualmachine.ncr.com/version: {{ .Chart.Version }}
+    virtualmachine.ncr.com/created: {{ now | date "2006-01-02T15:04:05" }}
+  labels:
+    kubevirt.io/domain: {{ .Release.Name }}
+spec:
+  type: {{ .Values.rdp.service.type }}
+  ports:
+  - port: {{ .Values.rdp.service.port }}
+    targetPort: 3389
+    protocol: TCP
+    name: rdp
+    {{ if eq .Values.rdp.service.type "NodePort" }}
+    nodePort: {{ .Values.rdp.service.nodePort }}
+    {{ end }}
+  selector:
+    kubevirt.io/domain: {{ .Release.Name }}
+{{ end }}

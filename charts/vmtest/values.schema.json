@@ -1,0 +1,254 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "running": {
+        "type": "boolean"
+      },
+      "mesh": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "logLevel": {
+            "type": "string",
+            "enum": ["error", "info", "debug", "trace", "warn"]
+          }
+        },
+        "required": [
+          "enabled",
+          "logLevel"
+        ]
+      },
+      "machineType": {
+        "type": "string"
+      },
+      "cpuCores": {
+        "type": "integer"
+      },
+      "rdp": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "service": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["ClusterIP", "LoadBalancer", "NodePort"]
+              },
+              "port": {
+                "type": "integer"
+              },
+              "nodePort": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "type",
+              "port",
+              "nodePort"
+            ]
+          }
+        },
+        "required": [
+          "enabled",
+          "service"
+        ]
+      },
+      "network": {
+        "type": "object",
+        "properties": {
+          "ports": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "port": {
+                    "type": "integer"
+                  },
+                  "protocol": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "port",
+                  "protocol"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "port": {
+                    "type": "integer"
+                  },
+                  "protocol": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "port",
+                  "protocol"
+                ]
+              }
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["masquerade", "passt"]
+          }
+        },
+        "required": [
+          "ports",
+          "type"
+        ]
+      },
+      "resources": {
+        "type": "object",
+        "properties": {
+          "requests": {
+            "type": "object",
+            "properties": {
+              "memory": {
+                "type": "string"
+              },
+              "cpu": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "memory",
+              "cpu"
+            ]
+          },
+          "limits": {
+            "type": "object",
+            "properties": {
+              "memory": {
+                "type": "string"
+              },
+              "cpu": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "memory",
+              "cpu"
+            ]
+          }
+        },
+        "required": [
+          "requests",
+          "limits"
+        ]
+      },
+      "drivers": {
+        "type": "object",
+        "properties": {
+          "mount": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "mount"
+        ]
+      },
+      "disks": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["disk", "cdrom"]
+              },
+              "bus": {
+                "type": "string",
+                "enum": ["virtio", "sata"]
+              },
+              "bootOrder": {
+                "type": "integer"
+              },
+              "size": {
+                "type": "string"
+              },
+              "storageClassName": {
+                "type": "string",
+                "enum": ["local-path", "linstor-rwo-storage", "linstor-rwx-storage"]
+              },
+              "image": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "type",
+              "bus",
+              "bootOrder",
+              "size",
+              "storageClassName",
+              "image"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "bootOrder": {
+                "type": "integer"
+              },
+              "bus": {
+                "type": "string"
+              },
+              "size": {
+                "type": "string"
+              },
+              "storageClassName": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "type",
+              "bootOrder",
+              "bus",
+              "size",
+              "storageClassName"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "running",
+      "mesh",
+      "machineType",
+      "cpuCores",
+      "rdp",
+      "network",
+      "resources",
+      "drivers",
+      "disks"
+    ]
+  }

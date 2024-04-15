@@ -1,0 +1,59 @@
+# target state
+running: true
+
+# mesh the virtual machine
+mesh:
+  enabled: false
+  logLevel: error
+
+# machine type
+machineType: q35
+cpuCores: 2
+
+# enable rdp
+rdp:
+  enabled: false
+  service:
+    type: ClusterIP
+    port: 27017
+    nodePort: 32701 # only applied if service type is NodePort
+
+# define vm network
+network:
+  ports:
+  - name: rdp # required for rdp connections
+    port: 3389
+    protocol: TCP
+  - name: https
+    port: 443
+    protocol: TCP
+  type: masquerade
+
+# set resource limits on virtual machine
+resources:
+  requests:
+    memory: 2G
+    cpu: 500m
+  limits:
+    memory: 4G
+    cpu: 1000m
+
+# mount the paravirtualised drivers to the virtual machine
+drivers:
+  mount: true
+
+# define set of disks (disk images, isos)
+disks:
+- name: disk-image
+  type: cdrom
+  bus: sata
+  bootOrder: 1
+  size: 10G
+  storageClassName: local-path
+  image: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads/windows10@sha256:6fb0a19a115a343f5f453c5e1dc3006decb6fe2951683f65cca6388dedf4f040
+- name: disk
+  type: disk
+  bootOrder: 2
+  bus: virtio
+  size: 80G
+  storageClassName: local-path
