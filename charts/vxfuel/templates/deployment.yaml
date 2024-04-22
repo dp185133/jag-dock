@@ -20,22 +20,25 @@ spec:
       - name: vxfuel-persist
         persistentVolumeClaim:
           claimName: vxfuel-persist-claim
-      - name: fluentbit-config # Fluentbit config files will be mapped here from configmap yaml
+      # Fluentbit config files will be mapped here from configmap yaml
+      - name: vxfuel-fluentbit-config
         configMap:
-          name: fluentbit-config
+          name: vxfuel-fluentbit-config
       initContainers:
-      - name: vxfuel-init # Sidecar Init container to initialize environment, e.g. create subfolders on mounted volume.
+      # Sidecar Init container to initialize environment, e.g. create subfolders on mounted volume.
+      - name: vxfuel-init
         image: {{ .Values.global.repository }}/vxfuel-init:0.1.4
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"
       containers:
-      - name: fluentbit #Sidecar Fluentbit container for log scraping
+      # Sidecar Fluentbit container for log scraping
+      - name: vxfuel-fluentbit
         image: cr.fluentbit.io/fluent/fluent-bit:2.2.2
         volumeMounts:
         - name: vxfuel-persist
           mountPath: "/persist/"
-        - name: fluentbit-config
+        - name: vxfuel-fluentbit-config
           mountPath: /fluent-bit/etc/
       - name: vxfuel
         image: {{ .Values.global.repository }}/vxfuel:{{ .Values.global.imageVersion }}
