@@ -3,36 +3,36 @@ data:
   fluent-bit.conf: "#Configure Fluent Bit Service\r\n[SERVICE]\r\n    #Enable Prometheus
     Metrics for FluentBit\r\n    HTTP_Server     On\r\n    HTTP_Listen     0.0.0.0\r\n
     \   HTTP_PORT       8089\r\n    #Write service logs to file\r\n    Log_File        /persist/fluentbit/log/vxfuel.log\r\n
-    \   Log_Level       debug\r\n    Parsers_File    fuel-parser.conf\r\n    Grace
+    \   Log_Level       info\r\n    Parsers_File    fuel-parser.conf\r\n    Grace
     \          5\r\n    Flush           5\r\n\r\n#FluentBit's Own Log\r\n[INPUT]\r\n
     \   Name            tail\r\n    Path            /persist/fluentbit/log/vxfuel.log\r\n
     \   Path_Key        logFilePath\r\n    Parser          vxfuel-fluentbitlog-parser\r\n
     \   Tag             vxfuel.fluentbitlog\r\n    DB              /persist/fluentbit/db/vxfuel.fluentbitlog.db\r\n
     \   Ignore_Older    7d\r\n    Read_from_Head  true\r\n\r\n#Serilog(s)\r\n[INPUT]\r\n
-    \   Name            tail\r\n    Path            /persist/logConfigurationService-log-*.json,
-    /persist/logDevMan-log-*.json, /persist/logeventfilejson_*.json, /persist/logIcarus-log-*.json,
-    /persist/logJagEventManager-log-*.json, /persist/logPriceChangeManager-log-*.json,
-    /persist/logRadStart-log-*.json, /persist/logSecurityService-log-*.json, /persist/logSMClient-log-*.json,
-    /persist/logTeleQ-log-*.json\r\n    Path_Key        logFilePath\r\n    Parser
+    \   Name            tail\r\n    Path            /persist/log/ConfigurationService-log-*.json,
+    /persist/log/DevMan-log-*.json, /persist/log/eventfilejson_*.json, /persist/log/Icarus-log-*.json,
+    /persist/log/JagEventManager-log-*.json, /persist/log/PriceChangeManager-log-*.json,
+    /persist/log/RadStart-log-*.json, /persist/log/SecurityService-log-*.json, /persist/log/SMClient-log-*.json,
+    /persist/log/TeleQ-log-*.json\r\n    Path_Key        logFilePath\r\n    Parser
     \         fuel-serilog-parser\r\n    Tag             fuel.serilog\r\n    DB              /persist/fluentbit/db/fuel.serilog.db\r\n
     \   Ignore_Older    7d\r\n    Read_from_Head  true\r\n\r\n#BinaryVersions.log\r\n[INPUT]\r\n
-    \   Name                tail\r\n    Path                /persist/logBinaryVersions*.log\r\n
+    \   Name                tail\r\n    Path                /persist/log/BinaryVersions*.log\r\n
     \   Path_Key            logFilePath\r\n    multiline.parser    fuel-binaryversions-multilineparser\r\n
     \   Tag                 fuel.binaryversions\r\n    DB                 /persist/fluentbit/db/fuel.binaryversions.db\r\n
     \   Ignore_Older        7d\r\n    Read_from_Head      true\r\n\r\n#discovery.log\r\n[INPUT]\r\n
-    \   Name            tail\r\n    Path            /persist/logdiscovery*.log\r\n
+    \   Name            tail\r\n    Path            /persist/log/discovery*.log\r\n
     \   Path_Key        logFilePath\r\n    Parser          fuel-discoverylog-parser\r\n
     \   Tag             fuel.discoverylog\r\n    DB              /persist/fluentbit/db/fuel.discoverylog.db\r\n
     \   Ignore_Older    7d\r\n    Read_from_Head  true\r\n\r\n#Error.log\r\n[INPUT]\r\n
-    \   Name            tail\r\n    Path            /persist/logError*.log\r\n    Path_Key
+    \   Name            tail\r\n    Path            /persist/log/Error*.log\r\n    Path_Key
     \       logFilePath\r\n    Parser          fuel-errorlog-parser\r\n    Tag             fuel.errorlog\r\n
     \   DB              /persist/fluentbit/db/fuel.errorlog.db\r\n    Ignore_Older
     \   7d\r\n    Read_from_Head  true\r\n\r\n#logging.txt\r\n[INPUT]\r\n    Name
-    \           tail\r\n    Path            /persist/loglogging*.txt\r\n    Path_Key
+    \           tail\r\n    Path            /persist/log/logging*.txt\r\n    Path_Key
     \       logFilePath\r\n    Parser          fuel-logging-parser\r\n    Tag             fuel.logging\r\n
     \   DB              /persist/fluentbit/db/fuel.logging.db\r\n    Ignore_Older
     \   7d\r\n    Read_from_Head  true\r\n\r\n#RadBoot.log\r\n[INPUT]\r\n    Name
-    \           tail\r\n    Path            /persist/logRadBoot*.log\r\n    Path_Key
+    \           tail\r\n    Path            /persist/log/RadBoot*.log\r\n    Path_Key
     \       logFilePath\r\n    Parser          fuel-radbootlog-parser\r\n    Tag             fuel.radbootlog\r\n
     \   DB              /persist/fluentbit/db/fuel.radbootlog.db\r\n    Ignore_Older
     \   7d\r\n    Read_from_Head  true\r\n\r\n#FluentBit's Own Log - Transform to
