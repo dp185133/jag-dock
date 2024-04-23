@@ -3,7 +3,7 @@ data:
   fluent-bit.conf: "#Configure Fluent Bit Service\r\n[SERVICE]\r\n    #Enable Prometheus
     Metrics for FluentBit\r\n    HTTP_Server     On\r\n    HTTP_Listen     0.0.0.0\r\n
     \   HTTP_PORT       8089\r\n    #Write service logs to file\r\n    Log_File        /persist/fluentbit/log/vxfuel.log\r\n
-    \   Log_Level       info\r\n    Parsers_File    fuel-parser.conf\r\n    Grace
+    \   Log_Level       debug\r\n    Parsers_File    fuel-parser.conf\r\n    Grace
     \          5\r\n    Flush           5\r\n\r\n#FluentBit's Own Log\r\n[INPUT]\r\n
     \   Name            tail\r\n    Path            /persist/fluentbit/log/vxfuel.log\r\n
     \   Path_Key        logFilePath\r\n    Parser          vxfuel-fluentbitlog-parser\r\n
