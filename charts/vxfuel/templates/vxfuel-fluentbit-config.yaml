@@ -51,7 +51,7 @@ data:
     - Transform to Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match
     \  fuel.radbootlog\r\n    Script  fuellog-to-googlelog.lua\r\n    call    transformRadbootlog\r\n\r\n#Write
     to stdout\r\n[OUTPUT]\r\n    Name            stdout\r\n    Format          json_lines\r\n
-    \   #Format          json_stream\r\n    json_date_key   false\r\n    Match           *\r\n"
+    \   #Format          json_stream\r\n    json_date_key   false\r\n    Match           *"
   fuel-parser.conf: "[PARSER]\r\n    Name        vxfuel-fluentbitlog-parser\r\n    Format
     \     regex\r\n    regex       ^\\[(?<time>\\d+\\/\\d+\\/\\d+\\s\\d+:\\d+:\\d+)\\]\\s\\[\\s*(?<severity>[a-zA-Z]+)\\]\\s*(?<message>.*)\r\n
     \   Time_Key    time\r\n    Time_Format %Y/%m/%d %H:%M:%S\r\n    Time_Keep   On\r\n\r\n[PARSER]\r\n
@@ -81,19 +81,20 @@ data:
     \   elseif jagSeverity == \"Warning\" then return(\"WARNING\")\r\n    elseif jagSeverity
     == \"Error\" then return(\"ERROR\")\r\n    else return jagSeverity\r\n    end\r\nend\r\n\r\nfunction
     transformFluentbitlog(tag, timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"]
-    = record[\"severity\"]\r\n    --convert time to rfc3339\r\n    newRecord[\"time\"]
-    = string.gsub(record[\"time\"],\"/\", \"-\")\r\n    newRecord[\"time\"] = string.gsub(newRecord[\"time\"],\"
-    \", \"T\")\r\n    newRecord[\"message\"] = record[\"message\"]\r\n    local labels
-    = {module = record[\"module\"], logname = record[\"logFilePath\"]}\r\n    if (next(labels)
+    = record[\"severity\"]\r\n    --convert time to rfc3339\r\n    newRecord[\"timestamp\"]
+    = string.gsub(record[\"time\"],\"/\", \"-\")\r\n    newRecord[\"timestamp\"] =
+    string.gsub(newRecord[\"timestamp\"],\" \", \"T\")\r\n    newRecord[\"message\"]
+    = record[\"message\"]\r\n    local labels = {module = record[\"module\"], logname
+    = record[\"logFilePath\"]}\r\n    if (next(labels) ~= nil) then --check if we
+    have at least one label\r\n        newRecord[\"labels\"] = labels\r\n    end\r\n
+    \   return 1, timestamp, newRecord\r\nend\r\n\r\nfunction transformSerilog(tag,
+    timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"] = mapSeverity(record[\"@l\"]);\r\n
+    \   newRecord[\"message\"] = record\r\n    newRecord[\"time\"] = record[\"@t\"]\r\n
+    \   --event and module are not always present in each record, therefore do not
+    append labels if there are none\r\n    local labels = {event = record[\"@i\"],
+    module = record[\"module\"], applicationName = record[\"ApplicationName\"], sourceContext
+    = record[\"SourceContext\"], logname = record[\"logFilePath\"]}\r\n    if (next(labels)
     ~= nil) then --check if we have at least one label\r\n        newRecord[\"logging.googleapis.com/labels\"]
-    = labels\r\n    end\r\n    return 1, timestamp, newRecord\r\nend\r\n\r\nfunction
-    transformSerilog(tag, timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"]
-    = mapSeverity(record[\"@l\"]);\r\n    newRecord[\"message\"] = record\r\n    newRecord[\"time\"]
-    = record[\"@t\"]\r\n    --event and module are not always present in each record,
-    therefore do not append labels if there are none\r\n    local labels = {event
-    = record[\"@i\"], module = record[\"module\"], applicationName = record[\"ApplicationName\"],
-    sourceContext = record[\"SourceContext\"], logname = record[\"logFilePath\"]}\r\n
-    \   if (next(labels) ~= nil) then --check if we have at least one label\r\n        newRecord[\"logging.googleapis.com/labels\"]
     = labels\r\n    end\r\n    --Remove \"logFilePath\" from the record, it was artifically
     added in the [INPUT] section to be transformed to a label\r\n    newRecord[\"message\"][\"logFilePath\"]
     = nil\r\n    return 1, timestamp, newRecord\r\nend\r\n\r\nfunction transformBinaryVersionsLog(tag,
