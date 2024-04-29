@@ -35,7 +35,11 @@ data:
     \           tail\r\n    Path            /persist/log/RadBoot*.log\r\n    Path_Key
     \       logFilePath\r\n    Parser          fuel-radbootlog-parser\r\n    Tag             fuel.radbootlog\r\n
     \   DB              /persist/fluentbit/db/fuel.radbootlog.db\r\n    Ignore_Older
-    \   7d\r\n    Read_from_Head  true\r\n\r\n#FluentBit's Own Log - Transform to
+    \   7d\r\n    Read_from_Head  true\r\n\r\n#crossover/crossover-bootexec.log\r\n[INPUT]\r\n
+    \   Name            tail\r\n    Path            /persist/log/crossover/crossover-bootexec.log\r\n
+    \   Path_Key        logFilePath\r\n    Tag             fuel.crossoverlog\r\n    #DB
+    \             /persist/fluentbit/db/fuel.crossover-bootexec.db\r\n    Ignore_Older
+    \   1d\r\n    Read_from_Head  true\r\n\r\n#FluentBit's Own Log - Transform to
     Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match   vxfuel.fluentbitlog\r\n
     \   Script  fuellog-to-googlelog.lua\r\n    call    transformFluentbitlog\r\n\r\n#Serilog(s)
     - Transform to Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match
@@ -49,7 +53,9 @@ data:
     - Transform to Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match
     \  fuel.logging\r\n    Script  fuellog-to-googlelog.lua\r\n    call    transformLogging\r\n\r\n#RadBoot.log
     - Transform to Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match
-    \  fuel.radbootlog\r\n    Script  fuellog-to-googlelog.lua\r\n    call    transformRadbootlog\r\n\r\n#Write
+    \  fuel.radbootlog\r\n    Script  fuellog-to-googlelog.lua\r\n    call    transformRadbootlog\r\n\r\n#crossover/crossover-bootexec.log
+    - Transform to Google Standard Log model\r\n[FILTER]\r\n    Name    lua\r\n    Match
+    \  fuel.crossoverlog\r\n    Script  fuellog-to-googlelog.lua\r\n    call    transformCrossoverlog\r\n\r\n#Write
     to stdout\r\n[OUTPUT]\r\n    Name            stdout\r\n    Format          json_lines\r\n
     \   #Format          json_stream\r\n    json_date_key   false\r\n    Match           *"
   fuel-parser.conf: "[PARSER]\r\n    Name        vxfuel-fluentbitlog-parser\r\n    Format
@@ -75,11 +81,19 @@ data:
     \           \"line4\"\r\n    rule      \"line4\"          \"/^\\s+Size.+/\"                 \"line5\"\r\n
     \   rule      \"line5\"          \"/^\\s+Commit.+/\"               \"line6\"\r\n
     \   rule      \"line6\"          \"/^\\s*$/\"                      \"line6\"\r\n"
-  fuellog-to-googlelog.lua: "local function mapSeverity(jagSeverity)\r\n    if     jagSeverity
-    == \"Trace\" then return(\"TRACE\")\r\n    elseif jagSeverity == \"Debug\" then
-    return(\"DEBUG\")\r\n    elseif jagSeverity == \"Info\" then return(\"INFO\")\r\n
-    \   elseif jagSeverity == \"Warning\" then return(\"WARNING\")\r\n    elseif jagSeverity
-    == \"Error\" then return(\"ERROR\")\r\n    else return jagSeverity\r\n    end\r\nend\r\n\r\nfunction
+  fuellog-to-googlelog.lua: "local function mapSerilogSeverity(jagSeverity)\r\n    if
+    \    jagSeverity == \"Trace\" then return(\"TRACE\")\r\n    elseif jagSeverity
+    == \"Debug\" then return(\"DEBUG\")\r\n    elseif jagSeverity == \"Info\" then
+    return(\"INFO\")\r\n    elseif jagSeverity == \"Warning\" then return(\"WARNING\")\r\n
+    \   elseif jagSeverity == \"Error\" then return(\"ERROR\")\r\n    else return
+    jagSeverity\r\n    end\r\nend\r\n\r\nfunction parseWineSeverity(wineLog)\r\n    --Lua
+    doesn't support Regex and pattern matching is limited, therefore need to search
+    for patterns multiple times\r\n    --Search for severity at the beginning of string\r\n
+    \   local s = wineLog:match('^(%a+):')\r\n    if s == nil then\r\n        --Search
+    for severity in the middle of string\r\n        s = wineLog:match('^%d*.%d*:%w*:%w*:(%a+):')\r\n
+    \   end\r\n\r\n    if     s == \"trace\" then return(\"TRACE\")\r\n    elseif
+    s == \"warn\" then return(\"WARNING\")\r\n    elseif s == \"err\" then return(\"ERROR\")\r\n
+    \   elseif s == \"fixme\" then return(\"ERROR\")\r\n    else return nil\r\n    end\r\nend\r\n\r\nfunction
     transformFluentbitlog(tag, timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"]
     = record[\"severity\"]\r\n    --convert time to rfc3339\r\n    newRecord[\"time\"]
     = string.gsub(record[\"time\"],\"/\", \"-\")\r\n    newRecord[\"time\"] = string.gsub(newRecord[\"time\"],\"
@@ -88,14 +102,15 @@ data:
     ~= nil) then --check if we have at least one label\r\n        newRecord[\"labels\"]
     = labels\r\n    end\r\n    return 1, timestamp, newRecord\r\nend\r\n\r\nfunction
     transformSerilog(tag, timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"]
-    = mapSeverity(record[\"@l\"]);\r\n    newRecord[\"message\"] = record\r\n    newRecord[\"time\"]
-    = record[\"@t\"]\r\n    --event and module are not always present in each record,
-    therefore do not append labels if there are none\r\n    local labels = {event
-    = record[\"@i\"], module = record[\"module\"], applicationName = record[\"ApplicationName\"],
-    sourceContext = record[\"SourceContext\"], logname = record[\"logFilePath\"]}\r\n
-    \   if (next(labels) ~= nil) then --check if we have at least one label\r\n        newRecord[\"labels\"]
-    = labels\r\n    end\r\n    --Remove \"logFilePath\" from the record, it was artifically
-    added in the [INPUT] section to be transformed to a label\r\n    newRecord[\"message\"][\"logFilePath\"]
+    = mapSerilogSeverity(record[\"@l\"]);\r\n    newRecord[\"message\"] = record\r\n
+    \   newRecord[\"time\"] = record[\"@t\"]\r\n    --event and module are not always
+    present in each record, therefore do not append labels if there are none\r\n    local
+    labels = {event = record[\"@i\"], module = record[\"module\"], applicationName
+    = record[\"ApplicationName\"], sourceContext = record[\"SourceContext\"], logname
+    = record[\"logFilePath\"]}\r\n    if (next(labels) ~= nil) then --check if we
+    have at least one label\r\n        newRecord[\"labels\"] = labels\r\n    end\r\n
+    \   --Remove \"logFilePath\" from the record, it was artifically added in the
+    [INPUT] section to be transformed to a label\r\n    newRecord[\"message\"][\"logFilePath\"]
     = nil\r\n    return 1, timestamp, newRecord\r\nend\r\n\r\nfunction transformBinaryVersionsLog(tag,
     timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"time\"] = record[\"log\"]:match('^.*Timestamp:
     (%d+-%d+-%d+ %d+:%d+:%d+)') --extract timestamp from original log\r\n    --convert
@@ -129,7 +144,12 @@ data:
     \   newRecord[\"message\"] = record[\"message\"]\r\n    local labels = {logname
     = record[\"logFilePath\"]}\r\n    if (next(labels) ~= nil) then --check if we
     have at least one label\r\n        newRecord[\"labels\"] = labels\r\n    end\r\n
-    \   return 1, timestamp, newRecord\r\nend"
+    \   return 1, timestamp, newRecord\r\nend\r\n\r\nfunction transformCrossoverlog(tag,
+    timestamp, record)\r\n    newRecord = {}\r\n    newRecord[\"severity\"] = parseWineSeverity(record[\"log\"])\r\n
+    \   newRecord[\"message\"] = record[\"log\"]\r\n    local labels = {logname =
+    record[\"logFilePath\"]}\r\n    if (next(labels) ~= nil) then --check if we have
+    at least one label\r\n        newRecord[\"labels\"] = labels\r\n    end\r\n    return
+    1, timestamp, newRecord\r\nend"
 kind: ConfigMap
 metadata:
   name: vxfuel-fluentbit-config
