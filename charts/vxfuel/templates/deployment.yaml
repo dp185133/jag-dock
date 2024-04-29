@@ -14,6 +14,8 @@ spec:
     metadata:
       labels:
         app: vxfuel
+      annotations:
+        checksum/config: {{ include (print $.Template.BasePath "/vxfuel-fluentbit-config.yaml") . | sha256sum }}
     spec:
       hostname: panther2
       volumes:
