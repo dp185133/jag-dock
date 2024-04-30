@@ -9,3 +9,4 @@ spec:
     - name: fluentbit
       protocol: TCP
       port: 8089
+      targetPort: 8089
