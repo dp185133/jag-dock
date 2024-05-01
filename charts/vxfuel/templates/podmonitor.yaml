@@ -1,0 +1,22 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: non-gke-cluster
+    monitoring.edge.ncr.com/allowed-metrics: |
+      fluentbit_output_errors_total
+      fluentbit_output_proc_records_total
+      fluentbit_output_stackdriver_failed_requests_total
+      fluentbit_uptime
+  labels:
+    app.kubernetes.io/part-of: fluent-bit
+  name: vxfuel
+  namespace: vx
+spec:
+  podMetricsEndpoints:
+  - interval: 60s
+    path: /api/v1/metrics/prometheus
+    port: metrics
+  selector:
+    matchLabels:
+      app: vxfuel
