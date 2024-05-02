@@ -1,25 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Generated schema for Root",
-  "type": "object",
-  "properties": {
-    "global": {
-      "type": "object",
-      "properties": {
-        "repository": {
-          "type": "string"
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "global": {
+        "type": "object",
+        "properties": {
+          "repository": {
+            "type": "string"
+          },
+          "imageVersion": {
+            "type": "string"
+          }
         },
-        "imageVersion": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "repository",
-        "imageVersion"
-      ]
-    }
-  },
-  "required": [
-    "global"
-  ]
+        "required": [
+          "repository",
+          "imageVersion"
+        ]
+      }
+    },
+    "required": [
+      "global"
+    ]
+  }
 }
