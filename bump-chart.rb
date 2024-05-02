@@ -31,7 +31,7 @@ if /(\d+\.\d+\.)(\d+)/.match(ver) then
   rc = system <<SYSCOMMANDS
 
 helm package -d charts/docs --version #{newver} charts/#{POD_NAME} && \
-helm repo index charts --url https://github.com/dp185133/jag-dock/tree/main/charts && \
+helm repo index charts --url https://github.com/dp185133/jag-dock/raw/main/charts && \
 git add charts/docs/#{POD_NAME}-#{newver}.tgz && \
 git commit -a -m "Increment #{POD_NAME} version to #{newver}" && \
 git push
