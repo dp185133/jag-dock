@@ -3,7 +3,7 @@ apiVersion: v2
 description: vxFuel Helm chart for Kubernetes
 name: vxfuel
 type: application
-version: 0.2.7
-appVersion: 0.2.7
+version: 0.2.8
+appVersion: 0.2.8
 annotations:
   managed-by: ncr
