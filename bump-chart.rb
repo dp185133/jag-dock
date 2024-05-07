@@ -6,7 +6,7 @@ POD_NAME=ARGV[0] || 'vxfuel'
 
 puts "POD: #{POD_NAME}"
 
-CHART_FILE = "charts/#{POD_NAME}/Chart.yaml"
+CHART_FILE = "charts/vfuel/Chart.yaml"
 
 fc_chart = File.read(CHART_FILE)
 
@@ -30,7 +30,7 @@ if /(\d+\.\d+\.)(\d+)/.match(ver) then
 
   rc = system <<SYSCOMMANDS
 
-helm package -d charts/docs --version #{newver} charts/#{POD_NAME} && \
+helm package -d charts/docs --version #{newver} charts/vfuel && \
 helm repo index charts --url https://github.com/dp185133/jag-dock/raw/main/charts && \
 git add charts/docs/#{POD_NAME}-#{newver}.tgz && \
 git commit -a -m "Increment #{POD_NAME} version to #{newver}" && \
