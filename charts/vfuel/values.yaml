@@ -1,7 +1,7 @@
 ---
 global:
   repository: us-east1-docker.pkg.dev/ret-edge-pltf-infra/workloads
-  imageVersion: 20d9bc7f4dd652de6d02d39a852019b6c1abe056
+  imageVersion: 0.2.7
   mosquitto:
     wsExternalPort: 9101
     tcpExternalPort: 1884
