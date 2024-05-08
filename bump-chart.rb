@@ -6,7 +6,7 @@ POD_NAME=ARGV[0] || 'vxfuel'
 
 puts "POD: #{POD_NAME}"
 
-CHART_FILE = "charts/vfuel/Chart.yaml"
+CHART_FILE = "charts/vxfuel/Chart.yaml"
 
 fc_chart = File.read(CHART_FILE)
 
