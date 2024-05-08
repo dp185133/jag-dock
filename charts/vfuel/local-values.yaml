@@ -1,3 +1,0 @@
-global:
-  repository: localhost:5001
-  imageVersion: latest
