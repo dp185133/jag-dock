@@ -1,4 +1,4 @@
-gFROM scratch
+FROM scratch
 
 ARG VXFUEL_BUNDLE
 ARG VXFUEL_CAB
@@ -159,8 +159,6 @@ WORKDIR /opt/pcr/install
 RUN tar -zxf config.tgz
 ###################################################################################################
 
-COPY data/data.tar /opt/data.tgz
-
 WORKDIR /opt/pcr/install/panther2-jagless-linux-config
 RUN /opt/pcr/install/panther2-jagless-linux-config/configure-linux.sh
 
@@ -199,10 +197,6 @@ RUN mkdir -p /home/pcrfuel/.wine/drive_c/Program\ Files/Radiant/FastPoint/Bin
 RUN ln -s /persist/log /home/pcrfuel/.wine/drive_c/Program\ Files/Radiant/FastPoint/Log
 RUN ln -s /persist/data /home/pcrfuel/.wine/drive_c/Program\ Files/Radiant/FastPoint/Data
 RUN chown -R pcrfuel:pcrfuel /home/pcrfuel/.wine
-
-# Temporary hack to let service like mosquitto write logs (insecure, for dev only)
-RUN chmod 777 /var/log
-
 
 user pcrfuel
 WORKDIR /home/pcrfuel
