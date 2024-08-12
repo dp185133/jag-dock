@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-service-gin-deployment
+  labels:
+    app: web-service-gin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-service-gin
+  template:
+    metadata:
+      labels:
+        app: web-service-gin
+    spec:
+      hostname: testhost
+      containers:
+      - name: web-service-gin
+        image: ghcr.io/sg185141_ncrvoyix/web-service-gin:latest
+        env:
+        - name: PATH
+          value: "/usr/local/bin:/usr/bin:/bin:/sbin:/usr/sbin"
+      imagePullSecrets:
+      - name: edge-docker-pull-secret

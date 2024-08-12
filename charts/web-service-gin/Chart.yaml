@@ -1,0 +1,9 @@
+---
+apiVersion: v2
+description: web-service-gin Helm chart for test pod
+name: web-service-gin
+type: application
+version: 0.1.1
+appVersion: 0.1.1
+annotations:
+  managed-by: ncr
