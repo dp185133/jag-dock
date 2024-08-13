@@ -1,0 +1,9 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: web-service-gin
+  namespace: web-service-gin
+spec:
+  hostname: "web-service-gin.store.ncr.corp"
+  prefix: "/web/"
+  service: web-service-gin:80

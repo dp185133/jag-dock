@@ -1,9 +1,17 @@
----
 apiVersion: v2
 description: web-service-gin Helm chart for test pod
 name: web-service-gin
 type: application
-version: 0.1.1
-appVersion: 0.1.1
+
+version: 0.1.2
+appVersion: 1.1.1
 annotations:
   managed-by: ncr
+
+keywords:
+  - retail
+  - next-gen
+  - fuel
+
+sources:
+  - https://github.com/dp185133/jag-dock/tree/main/charts/web-service-gin
