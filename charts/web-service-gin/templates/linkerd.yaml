@@ -1,7 +1,7 @@
 apiVersion: policy.linkerd.io/v1beta1
 kind: Server
 metadata:
-  name: web-service-gin
+  name: web-service-gin-web-server
 spec:
   port: 8080
   podSelector:
@@ -11,9 +11,9 @@ spec:
 apiVersion: policy.linkerd.io/v1beta1
 kind: ServerAuthorization
 metadata:
-  name: web-service-gin-auth
+  name: web-service-gin-web-server-auth
 spec:
   client:
     unauthenticated: true
   server:
-    name: web-service-gin
+    name: web-service-gin-web-server

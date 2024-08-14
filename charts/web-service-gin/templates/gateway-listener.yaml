@@ -1,7 +1,7 @@
 apiVersion: getambassador.io/v3alpha1
 kind: Listener
 metadata:
-  name: listener-web-service-gin
+  name: listener-web-server
   namespace: emissary
 spec:
   hostBinding:

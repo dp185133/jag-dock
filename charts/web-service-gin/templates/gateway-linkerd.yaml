@@ -1,7 +1,7 @@
 apiVersion: policy.linkerd.io/v1beta1
 kind: Server
 metadata:
-  name: web-service-gin
+  name: web-server
   namespace: emissary
 spec:
   port: 8080
@@ -12,10 +12,10 @@ spec:
 apiVersion: policy.linkerd.io/v1beta1
 kind: ServerAuthorization
 metadata:
-  name: web-service-gin-auth
+  name: web-server-auth
   namespace: emissary
 spec:
   client:
     unauthenticated: true
   server:
-    name: web-service-gin
+    name: web-server
