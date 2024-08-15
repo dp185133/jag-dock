@@ -2831,23 +2831,4 @@ entries:
     urls:
     - https://github.com/dp185133/jag-dock/raw/main/charts/docs/web-service-gin-0.0.1.tgz
     version: 0.0.1
-  web-service-gin-application:
-  - annotations:
-      managed-by: ncr
-    apiVersion: v2
-    appVersion: 1.1.1
-    created: "2024-08-15T11:03:23.386763-04:00"
-    description: web-service-gin Helm chart for test pod
-    digest: 83fd052d8241e501d0cb328ee8c02c78c0659243ab5f4c64f8ef34c2ce193f7f
-    keywords:
-    - retail
-    - next-gen
-    - fuel
-    name: web-service-gin-application
-    sources:
-    - https://github.com/dp185133/jag-dock/tree/main/charts/web-service-gin
-    type: application
-    urls:
-    - https://github.com/dp185133/jag-dock/raw/main/charts/docs/web-service-gin-application-0.0.11.tgz
-    version: 0.0.11
 generated: "2024-08-15T11:03:23.193994-04:00"
