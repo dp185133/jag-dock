@@ -4,7 +4,7 @@ metadata:
   name: web-service-gin
 spec:
   selector:
-    app: web-service-gin-selector
+    app: web-service-gin
   ports:
     - name: http
       protocol: TCP
