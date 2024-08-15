@@ -1,8 +1,0 @@
-apiVersion: getambassador.io/v3alpha1
-kind: TCPMapping
-metadata:
-  name: web-service-gin-web-server
-  namespace: web-service-gin
-spec:
-  port: 8080
-  service: web-service-gin.web-service-gin:8080

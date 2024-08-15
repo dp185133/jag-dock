@@ -1,4 +1,0 @@
----
-global:
-  web-service-gin:
-    test: true
