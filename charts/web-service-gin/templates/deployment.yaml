@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-service-gin
+  name: web-service-gin-deployment
   labels:
     app: web-service-gin
   annotations:
@@ -10,7 +10,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web-service-gin
+      app: web-service-gin-selector
   template:
     metadata:
       labels:
