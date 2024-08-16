@@ -6,7 +6,6 @@ metadata:
     app: web-service-gin
   annotations:
     linkerd.io/inject: "disabled"    
-    prometheus.io/scrape: "true"
 spec:
   replicas: 1
   selector:
@@ -16,10 +15,6 @@ spec:
     metadata:
       labels:
         app: web-service-gin
-    annotations:
-      prometheus.io/scrape: "true"
-      prometheus.io/port: "8080"  # Replace with your application's port
-      prometheus.io/path: "/metrics"
     spec:
       imagePullSecrets:
         - name: sgreg      
