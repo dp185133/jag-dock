@@ -19,4 +19,4 @@ spec:
     port: metrics
   selector:
     matchLabels:
-      app: vxfuel
+      app: web-service-gin
