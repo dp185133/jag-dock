@@ -19,12 +19,9 @@ spec:
   - interval: 60s
     path: /metrics
     port: metrics
-    selector:
-      matchLabels:
-        app: web-service-gin
   - interval: 60s
     path: /custommetrics
     port: metrics
-    selector:
-      matchLabels:
-        app: web-service-gin
+  selector:
+    matchLabels:
+      app: web-service-gin
