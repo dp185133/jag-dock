@@ -23,3 +23,4 @@ spec:
           image: ghcr.io/sg185141_ncrvoyix/web-service-gin:0.0.3
           ports:
           - containerPort: 8080
+            name: metrics
