@@ -24,6 +24,6 @@ spec:
         - name: sgreg      
       containers:
         - name: web-service-gin
-          image: ghcr.io/sg185141_ncrvoyix/web-service-gin:0.0.2
+          image: ghcr.io/sg185141_ncrvoyix/web-service-gin:0.0.3
           ports:
           - containerPort: 8080
