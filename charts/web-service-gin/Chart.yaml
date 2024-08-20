@@ -3,8 +3,8 @@ description: web-service-gin Helm chart for test pod
 name: web-service-gin
 type: application
 
-version: 0.1.23
-appVersion: 0.0.3
+version: 0.1.24
+appVersion: 0.0.4
 annotations:
   managed-by: ncr
 
