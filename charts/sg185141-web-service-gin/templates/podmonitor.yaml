@@ -1,0 +1,27 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: non-gke-cluster
+    monitoring.edge.ncr.com/allowed-metrics: |
+      process_cpu_seconds_total
+      process_virtual_memory_bytes
+      go_memstats_buck_hash_sys_bytes
+      go_memstats_mallocs_total
+      prometheus_demo_metrics_counter
+      prometheus_demo_getrequest_counter
+  labels:
+    app.kubernetes.io/part-of: web-service-gin
+  name: web-service-gin
+  namespace: web-service-gin
+spec:
+  podMetricsEndpoints:
+  - interval: 60s
+    path: /metrics
+    port: metrics
+  - interval: 60s
+    path: /custommetrics
+    port: metrics
+  selector:
+    matchLabels:
+      app: web-service-gin
