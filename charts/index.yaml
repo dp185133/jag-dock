@@ -5,7 +5,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.286776-04:00"
+    created: "2024-08-26T10:49:47.671859-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: 7d447ad159de18f896c6a82592c27a9cfd9cecfa3940fa7319bf94d084de2266
     keywords:
@@ -24,7 +24,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.7
-    created: "2024-08-26T10:31:01.288936-04:00"
+    created: "2024-08-26T10:49:47.674293-04:00"
     description: Simpumps pod Helm chart for Kubernetes
     digest: 7ef80e7a8d668c8e5d9a5884ac41582e402a9b9ae3d181e7543b8e6fd3f424ac
     name: simpumps
@@ -36,7 +36,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.6
-    created: "2024-08-26T10:31:01.28857-04:00"
+    created: "2024-08-26T10:49:47.673875-04:00"
     description: Simpumps pod Helm chart for Kubernetes
     digest: 65f8bca860d2d51d0d47874d81fac279af1f81b9af1bcebecf5952e682b1a2d6
     name: simpumps
@@ -48,7 +48,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.5
-    created: "2024-08-26T10:31:01.287852-04:00"
+    created: "2024-08-26T10:49:47.673098-04:00"
     description: Simpumps pod Helm chart for Kubernetes
     digest: b325a24456ab8092cabdff349127d7092099e3632487e90d52527a0f95a54dcf
     name: simpumps
@@ -60,7 +60,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.4
-    created: "2024-08-26T10:31:01.287305-04:00"
+    created: "2024-08-26T10:49:47.672425-04:00"
     description: Simpumps pod Helm chart for Kubernetes
     digest: a0470caeedd23700d80c4613d62f31b7640fc82168d08008716294fb22648538
     name: simpumps
@@ -73,7 +73,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-08-26T10:31:01.29193-04:00"
+    created: "2024-08-26T10:49:47.674947-04:00"
     description: A helm chart to deploy an Edge VM (KubeVirt)
     digest: 48aa930c9edbee48f5b830191c54d39f43f2bb9e8c1cb9452aa7553ac738bbd7
     keywords:
@@ -90,7 +90,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.426517-04:00"
+    created: "2024-08-26T10:49:47.811085-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -106,7 +106,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.425561-04:00"
+    created: "2024-08-26T10:49:47.809889-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -122,7 +122,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.424656-04:00"
+    created: "2024-08-26T10:49:47.80898-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -138,7 +138,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.42377-04:00"
+    created: "2024-08-26T10:49:47.808073-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -154,7 +154,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.422877-04:00"
+    created: "2024-08-26T10:49:47.807168-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -170,7 +170,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.42198-04:00"
+    created: "2024-08-26T10:49:47.804519-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -186,7 +186,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.42108-04:00"
+    created: "2024-08-26T10:49:47.803608-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -202,7 +202,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.170
-    created: "2024-08-26T10:31:01.419634-04:00"
+    created: "2024-08-26T10:49:47.802526-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 977b31dccef60c7061b02bfa7f4892209599aef679b71d96901eb65ae5446cf9
     name: vxfuel
@@ -214,7 +214,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.419092-04:00"
+    created: "2024-08-26T10:49:47.801561-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -230,7 +230,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.415658-04:00"
+    created: "2024-08-26T10:49:47.800734-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -246,7 +246,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.41474-04:00"
+    created: "2024-08-26T10:49:47.799903-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -262,7 +262,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.413804-04:00"
+    created: "2024-08-26T10:49:47.79902-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -278,7 +278,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.41288-04:00"
+    created: "2024-08-26T10:49:47.798181-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -294,7 +294,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.412122-04:00"
+    created: "2024-08-26T10:49:47.797459-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -310,7 +310,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.411213-04:00"
+    created: "2024-08-26T10:49:47.796562-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -326,7 +326,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.410308-04:00"
+    created: "2024-08-26T10:49:47.795539-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -342,7 +342,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.408912-04:00"
+    created: "2024-08-26T10:49:47.794491-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -358,7 +358,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.408111-04:00"
+    created: "2024-08-26T10:49:47.793055-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -374,7 +374,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.159
-    created: "2024-08-26T10:31:01.404258-04:00"
+    created: "2024-08-26T10:49:47.791896-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: a4f7c406b0673078a4e2056042fbf81d825899158b8b122bcb1a79b5fb3beb77
     name: vxfuel
@@ -386,7 +386,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.158
-    created: "2024-08-26T10:31:01.403882-04:00"
+    created: "2024-08-26T10:49:47.791497-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 1f98b099f5c793e79441ac5b2bf8b8cd48c6e829404584ef251698572fdf0683
     name: vxfuel
@@ -398,7 +398,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.157
-    created: "2024-08-26T10:31:01.403507-04:00"
+    created: "2024-08-26T10:49:47.791093-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 978e5e5f5feaba6da55dfb9cd705b25409ceff1284fe549fa5e974c3fd6993c0
     name: vxfuel
@@ -410,7 +410,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.156
-    created: "2024-08-26T10:31:01.403116-04:00"
+    created: "2024-08-26T10:49:47.790688-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: db346426518bc9779ca4630f814cf820eeb6cbf217b22a3fe5175e0d0554d1ed
     name: vxfuel
@@ -422,7 +422,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.402675-04:00"
+    created: "2024-08-26T10:49:47.790272-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -438,7 +438,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.401879-04:00"
+    created: "2024-08-26T10:49:47.789492-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -454,7 +454,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.153
-    created: "2024-08-26T10:31:01.401074-04:00"
+    created: "2024-08-26T10:49:47.786418-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 99bca7a377539d9bd3666a3d50d8d2a4eb65c4c62fa81664accd51fbec20ad45
     name: vxfuel
@@ -466,7 +466,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.400637-04:00"
+    created: "2024-08-26T10:49:47.786-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -482,7 +482,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.151
-    created: "2024-08-26T10:31:01.399313-04:00"
+    created: "2024-08-26T10:49:47.785183-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 26de121d21fd594528ce337e85f4697710c96774538c825d3f035d96e8a29c62
     name: vxfuel
@@ -494,7 +494,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.398888-04:00"
+    created: "2024-08-26T10:49:47.784551-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -510,7 +510,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.395335-04:00"
+    created: "2024-08-26T10:49:47.78362-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -526,7 +526,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.394559-04:00"
+    created: "2024-08-26T10:49:47.782721-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -542,7 +542,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.393594-04:00"
+    created: "2024-08-26T10:49:47.781684-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -558,7 +558,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.392685-04:00"
+    created: "2024-08-26T10:49:47.780797-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -574,7 +574,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.391921-04:00"
+    created: "2024-08-26T10:49:47.780017-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -590,7 +590,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.144
-    created: "2024-08-26T10:31:01.390998-04:00"
+    created: "2024-08-26T10:49:47.77907-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 13b93a30be8fd81033100e24b629acd8c5e135e86c54249831011c24b0f9fca9
     name: vxfuel
@@ -602,7 +602,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.390565-04:00"
+    created: "2024-08-26T10:49:47.774949-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -618,7 +618,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.389507-04:00"
+    created: "2024-08-26T10:49:47.77405-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -634,7 +634,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.388248-04:00"
+    created: "2024-08-26T10:49:47.772748-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -650,7 +650,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.3841-04:00"
+    created: "2024-08-26T10:49:47.77144-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -666,7 +666,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.38337-04:00"
+    created: "2024-08-26T10:49:47.770658-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -682,7 +682,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.382609-04:00"
+    created: "2024-08-26T10:49:47.769862-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -698,7 +698,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.136
-    created: "2024-08-26T10:31:01.381863-04:00"
+    created: "2024-08-26T10:49:47.769047-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c2dbfdc990b5f09a38d034b9ccb2e369c4f84dfed018985eef9fcbbe8e3e0612
     name: vxfuel
@@ -710,7 +710,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.381374-04:00"
+    created: "2024-08-26T10:49:47.768487-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -726,7 +726,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.380503-04:00"
+    created: "2024-08-26T10:49:47.767569-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -742,7 +742,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.133
-    created: "2024-08-26T10:31:01.379647-04:00"
+    created: "2024-08-26T10:49:47.764761-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 40703d3551416dd04862664984192f7a8c2b5c3098bd6eba6d88d8fe84f53256
     name: vxfuel
@@ -754,7 +754,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.379139-04:00"
+    created: "2024-08-26T10:49:47.76429-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -770,7 +770,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.131
-    created: "2024-08-26T10:31:01.377898-04:00"
+    created: "2024-08-26T10:49:47.763314-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 14c2db510ee13fbe5e9677fa9d34c7f9938460e778faef338de0162cfe4ec98a
     name: vxfuel
@@ -782,7 +782,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.377422-04:00"
+    created: "2024-08-26T10:49:47.762773-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -798,7 +798,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.374289-04:00"
+    created: "2024-08-26T10:49:47.761205-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -814,7 +814,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.373421-04:00"
+    created: "2024-08-26T10:49:47.760278-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -830,7 +830,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.372571-04:00"
+    created: "2024-08-26T10:49:47.759377-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -846,7 +846,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.37184-04:00"
+    created: "2024-08-26T10:49:47.758629-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -862,7 +862,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.371021-04:00"
+    created: "2024-08-26T10:49:47.757775-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -878,7 +878,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.370154-04:00"
+    created: "2024-08-26T10:49:47.755026-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -894,7 +894,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.123
-    created: "2024-08-26T10:31:01.369415-04:00"
+    created: "2024-08-26T10:49:47.754246-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 70bfd696ef5c498c26dbe68bd42e2873c9e0634e1e25e488ff9d35f937465774
     name: vxfuel
@@ -906,7 +906,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.121
-    created: "2024-08-26T10:31:01.36907-04:00"
+    created: "2024-08-26T10:49:47.753874-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 347425d8b13d41827c3a7c08273f8081a1fd9654657fcbeeefa9dbda42028099
     name: vxfuel
@@ -918,7 +918,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.120
-    created: "2024-08-26T10:31:01.36871-04:00"
+    created: "2024-08-26T10:49:47.753467-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: cb5e4f0d4f56bd850acb91b3aaa31a11f5010b71512daf0a2ac14de7a23c4c0e
     name: vxfuel
@@ -930,7 +930,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.365796-04:00"
+    created: "2024-08-26T10:49:47.752664-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -946,7 +946,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.117
-    created: "2024-08-26T10:31:01.365059-04:00"
+    created: "2024-08-26T10:49:47.751145-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 27aee5f27dfaf10945910288cbdcbb868605c540e61976aab998be1c94b7fa8b
     name: vxfuel
@@ -958,7 +958,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.364696-04:00"
+    created: "2024-08-26T10:49:47.75062-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -974,7 +974,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.363885-04:00"
+    created: "2024-08-26T10:49:47.749782-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -990,7 +990,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.363029-04:00"
+    created: "2024-08-26T10:49:47.748895-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -1006,7 +1006,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.113
-    created: "2024-08-26T10:31:01.362196-04:00"
+    created: "2024-08-26T10:49:47.746394-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b56960979556ab66c93a9e7ac6a6fac623491e542d2af108dd90d4c009b466e8
     name: vxfuel
@@ -1018,7 +1018,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.112
-    created: "2024-08-26T10:31:01.361739-04:00"
+    created: "2024-08-26T10:49:47.745949-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 335192850ab3315267e07c91e4fc4bb57421c5a949ca085c521695d8119766f5
     name: vxfuel
@@ -1030,7 +1030,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.361192-04:00"
+    created: "2024-08-26T10:49:47.745461-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -1046,7 +1046,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.360352-04:00"
+    created: "2024-08-26T10:49:47.744606-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -1062,7 +1062,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.358068-04:00"
+    created: "2024-08-26T10:49:47.743713-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -1078,7 +1078,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.35713-04:00"
+    created: "2024-08-26T10:49:47.742816-04:00"
     dependencies:
     - name: EFS-Services
       repository: https://raw.githubusercontent.com/ncrvoyix-swt-cfr/efs-services/gh-pages/
@@ -1094,7 +1094,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.98
-    created: "2024-08-26T10:31:01.464447-04:00"
+    created: "2024-08-26T10:49:47.834072-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b0f8b7678379ca10b6525b2cfa88bc22792ab6f21eeac9552c0498b602600852
     name: vxfuel
@@ -1106,7 +1106,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.96
-    created: "2024-08-26T10:31:01.461028-04:00"
+    created: "2024-08-26T10:49:47.833768-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5f97ea9e3fbbfe1792fef0258cc93a41364f7da64424ffbd2a57504c2d7ca044
     name: vxfuel
@@ -1118,7 +1118,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.95
-    created: "2024-08-26T10:31:01.460678-04:00"
+    created: "2024-08-26T10:49:47.833463-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5aaf9483613b5f15c19189e5b10d92f1123af55d22a5bba6697c20c469d136ef
     name: vxfuel
@@ -1130,7 +1130,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.94
-    created: "2024-08-26T10:31:01.460286-04:00"
+    created: "2024-08-26T10:49:47.833162-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b88dc454eaa3c903f31a9dd96c42c25ab463fb4b2980339e14b09c112b47af0a
     name: vxfuel
@@ -1142,7 +1142,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.93
-    created: "2024-08-26T10:31:01.459911-04:00"
+    created: "2024-08-26T10:49:47.832863-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 8247a1f5c0b28d10ffcbb01c6d345cc6d29bce8d0f048fc098b7f2646a6f19fd
     name: vxfuel
@@ -1154,7 +1154,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.92
-    created: "2024-08-26T10:31:01.459483-04:00"
+    created: "2024-08-26T10:49:47.832557-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: fe947b7c3f06d02c4fbad25c6646050ffcf993473a6e7000ff42b1b7b645c6ba
     name: vxfuel
@@ -1166,7 +1166,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.91
-    created: "2024-08-26T10:31:01.459056-04:00"
+    created: "2024-08-26T10:49:47.832078-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 51e5539333c847b7f2d1d8965b7a94e5a6ffffa6db97905805d05b4dab3003ac
     name: vxfuel
@@ -1178,7 +1178,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.74
-    created: "2024-08-26T10:31:01.457893-04:00"
+    created: "2024-08-26T10:49:47.831284-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 21cbb9e5dc9bb17e73955e067b176daaeb6f853f3f7d71f433cdba7cb84ef048
     name: vxfuel
@@ -1190,7 +1190,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.73
-    created: "2024-08-26T10:31:01.457483-04:00"
+    created: "2024-08-26T10:49:47.830978-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 49986b72234691c65665b927702599be0c9a676ab1a1837c9760c698ec894f60
     name: vxfuel
@@ -1202,7 +1202,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.72
-    created: "2024-08-26T10:31:01.457041-04:00"
+    created: "2024-08-26T10:49:47.830673-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 02d83fff89ad8f0546920fcaaac0c4ddc45548be32981bc599c67c51f6a68cae
     name: vxfuel
@@ -1214,7 +1214,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.71
-    created: "2024-08-26T10:31:01.454184-04:00"
+    created: "2024-08-26T10:49:47.830295-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 1974e16f363c56df18b7a18778013736e25ea571b5f7bde300772c55889c07df
     name: vxfuel
@@ -1226,7 +1226,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.70
-    created: "2024-08-26T10:31:01.453842-04:00"
+    created: "2024-08-26T10:49:47.829959-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f016255dca4aab5e06911a623c2aa9a6282ca3727671821cda40637b81871fd0
     name: vxfuel
@@ -1238,7 +1238,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.69
-    created: "2024-08-26T10:31:01.453105-04:00"
+    created: "2024-08-26T10:49:47.829176-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: ba6d914ec4d9f904b6d838a1bcf844a0b94e45989803725b031d9a6ecd116401
     name: vxfuel
@@ -1250,7 +1250,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.62
-    created: "2024-08-26T10:31:01.45267-04:00"
+    created: "2024-08-26T10:49:47.828564-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: dd0fcaaaf7a658d3c8ed520792a09b23e5b77ea7da4584f7bb7f59edc5b5e97e
     name: vxfuel
@@ -1262,7 +1262,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.58
-    created: "2024-08-26T10:31:01.451552-04:00"
+    created: "2024-08-26T10:49:47.825553-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 42b7fdc56fbf3454bdb6c89a6cc04aa5afcbd0275130102b392f1abad5fe17c9
     name: vxfuel
@@ -1274,7 +1274,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.57
-    created: "2024-08-26T10:31:01.449523-04:00"
+    created: "2024-08-26T10:49:47.825218-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 4b872f764bf0d5cc758e7b62770fb98d69a4acf40fd54aa337176c4004bf5b66
     name: vxfuel
@@ -1286,7 +1286,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.55
-    created: "2024-08-26T10:31:01.449168-04:00"
+    created: "2024-08-26T10:49:47.824883-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: a5161c915601f9b73ff1ea7eadfbb9fe2b10b4e5f875c7832fa3aab95c2bf730
     name: vxfuel
@@ -1298,7 +1298,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.54
-    created: "2024-08-26T10:31:01.44872-04:00"
+    created: "2024-08-26T10:49:47.824547-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 94f526f465110b0ab4307c85c9ec758303c13239725ba698e698f836644b0c60
     name: vxfuel
@@ -1310,7 +1310,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.53
-    created: "2024-08-26T10:31:01.44506-04:00"
+    created: "2024-08-26T10:49:47.82421-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: acd93810631735e54923eb3775f9f75625159dfb75d170545bf74606a6aec978
     name: vxfuel
@@ -1322,7 +1322,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.52
-    created: "2024-08-26T10:31:01.444665-04:00"
+    created: "2024-08-26T10:49:47.823846-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 86e78ad7cc8043898f4593ab4140440fb301ef4b1922f55ca9c283eb66b93f79
     name: vxfuel
@@ -1334,7 +1334,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.51
-    created: "2024-08-26T10:31:01.444055-04:00"
+    created: "2024-08-26T10:49:47.8234-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: ab92f5c6d43edf1ae3e2d3c619eddb4141319a85d0b26dc987ad3c3b6a9ac367
     name: vxfuel
@@ -1346,7 +1346,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.50
-    created: "2024-08-26T10:31:01.443483-04:00"
+    created: "2024-08-26T10:49:47.822938-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: d1359c07aa8fc30ae8da2fa478d1e8a2532b44375b0856be382279a01ab69093
     name: vxfuel
@@ -1358,7 +1358,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.49
-    created: "2024-08-26T10:31:01.443025-04:00"
+    created: "2024-08-26T10:49:47.822593-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 8a2b08caaa7aa99710ddd97c83eb2278e40924c1cbdf0c9ef0066f16c37d1ccc
     name: vxfuel
@@ -1370,7 +1370,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.48
-    created: "2024-08-26T10:31:01.442544-04:00"
+    created: "2024-08-26T10:49:47.822204-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: dbb3cada59e89453ff30644e7c65cb478c39aa59825bdb3a4f4d3aae848bb2c2
     name: vxfuel
@@ -1382,7 +1382,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.47
-    created: "2024-08-26T10:31:01.442085-04:00"
+    created: "2024-08-26T10:49:47.819483-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 79a222161dbc328d424771c493fc900007a24fd8473576acda5ee256b51db668
     name: vxfuel
@@ -1394,7 +1394,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.46
-    created: "2024-08-26T10:31:01.441588-04:00"
+    created: "2024-08-26T10:49:47.81915-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 7ed277290228ed26d89015e8cbf293c5813042807cb6330b8e8ba16d4b333e84
     name: vxfuel
@@ -1406,7 +1406,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.33
-    created: "2024-08-26T10:31:01.441182-04:00"
+    created: "2024-08-26T10:49:47.818815-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 73785fa2ae642b4fe1d1aef712d72f5a47667edaee839e3afa2240a30b89603c
     name: vxfuel
@@ -1418,7 +1418,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.29
-    created: "2024-08-26T10:31:01.435966-04:00"
+    created: "2024-08-26T10:49:47.818122-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 8e138e1dddb33b3ce18ba27b025ddec2aa4b9357d5e5bd311620b5e5c087763e
     name: vxfuel
@@ -1430,7 +1430,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.28
-    created: "2024-08-26T10:31:01.435629-04:00"
+    created: "2024-08-26T10:49:47.817633-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b249eee5dd17d24dcafba907153ada81b07b5ed9a13dfd04afd7048d776e5fa8
     name: vxfuel
@@ -1442,7 +1442,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.27
-    created: "2024-08-26T10:31:01.435291-04:00"
+    created: "2024-08-26T10:49:47.817285-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c4a8e1feb00c9b8e5f69d74c41a666eca8ec21851c66158cdf28319f0a4cd53f
     name: vxfuel
@@ -1454,7 +1454,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.26
-    created: "2024-08-26T10:31:01.434953-04:00"
+    created: "2024-08-26T10:49:47.816936-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b63c6de43b4432bbee2e04ac1d6e861993f659699bf02687c3d655257628dd30
     name: vxfuel
@@ -1466,7 +1466,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.25
-    created: "2024-08-26T10:31:01.434592-04:00"
+    created: "2024-08-26T10:49:47.816583-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 48a3dfcab2b9eb99677679b2510c4beb7ae8ce26570f180bcedeca2f0e727d53
     name: vxfuel
@@ -1478,7 +1478,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.24
-    created: "2024-08-26T10:31:01.434249-04:00"
+    created: "2024-08-26T10:49:47.816225-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 96aa5b0705aa60a319aa5d94fd303398e7d2467abbd88e429f4d44760c747a40
     name: vxfuel
@@ -1490,7 +1490,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.23
-    created: "2024-08-26T10:31:01.433902-04:00"
+    created: "2024-08-26T10:49:47.813687-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: ad12fcc46d653225d6da41c267f0c218b90172dc9210dcf658039733ecd60fb4
     name: vxfuel
@@ -1502,7 +1502,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.22
-    created: "2024-08-26T10:31:01.433532-04:00"
+    created: "2024-08-26T10:49:47.813193-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5bdaf1ef86e159f38334370f18d5e1555a24d3b81561fdd78c64db5aa63dc553
     name: vxfuel
@@ -1514,7 +1514,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.20
-    created: "2024-08-26T10:31:01.43245-04:00"
+    created: "2024-08-26T10:49:47.812505-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 73a1068370c4ff2acee6018c9ef009d0ca660f659a22a34e7bccc012eed81d87
     name: vxfuel
@@ -1526,7 +1526,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.19
-    created: "2024-08-26T10:31:01.431911-04:00"
+    created: "2024-08-26T10:49:47.812061-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 807e50822a3066ea1551bfd9b3e9229fb8ca9a525f4cf0b15fa035be07db8ed8
     name: vxfuel
@@ -1538,7 +1538,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.18
-    created: "2024-08-26T10:31:01.427046-04:00"
+    created: "2024-08-26T10:49:47.811577-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: cee97cc7854723f38c19305fe1a48f4494e7b2d7af858bdbb65b0d7d288291a0
     name: vxfuel
@@ -1550,7 +1550,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.16
-    created: "2024-08-26T10:31:01.407295-04:00"
+    created: "2024-08-26T10:49:47.792263-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 541bdeb7b5b1cf0c7a06d812f883856090aff5b3e8b34d10329fb553b2b12f63
     name: vxfuel
@@ -1562,7 +1562,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.14
-    created: "2024-08-26T10:31:01.387313-04:00"
+    created: "2024-08-26T10:49:47.771908-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 9fd8e454de07929e467d0d1f2ddd62b08678397d9a231eb0afd40826197ec14c
     name: vxfuel
@@ -1574,7 +1574,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.13
-    created: "2024-08-26T10:31:01.374644-04:00"
+    created: "2024-08-26T10:49:47.761751-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 30cee501e88669a1ef92d17a4be1cb542c795bd0aea9a6b29c38e053e956fa73
     name: vxfuel
@@ -1586,7 +1586,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.12
-    created: "2024-08-26T10:31:01.36638-04:00"
+    created: "2024-08-26T10:49:47.753063-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 253faed9c79b6f0dd29a7914febde626c984e2e52a0d79fd110c93293e2f80f1
     name: vxfuel
@@ -1598,7 +1598,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.10
-    created: "2024-08-26T10:31:01.354902-04:00"
+    created: "2024-08-26T10:49:47.741902-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 924ba82e1dfdff91b26e37763692bb5d56a5e52cf399b6424809d8f4d9323781
     name: vxfuel
@@ -1610,7 +1610,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.9
-    created: "2024-08-26T10:31:01.458499-04:00"
+    created: "2024-08-26T10:49:47.831671-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f7d0d25e7073a8c6db693e10a460bc705fc2b5ec9a25e90c2e41e69e5a6bdca9
     name: vxfuel
@@ -1622,7 +1622,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.7
-    created: "2024-08-26T10:31:01.453493-04:00"
+    created: "2024-08-26T10:49:47.829618-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5abd29fa811736a509b3f986dc2fc0cbab281d9cf9ac03c81a5acb077212cd4f
     name: vxfuel
@@ -1634,7 +1634,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.6
-    created: "2024-08-26T10:31:01.451984-04:00"
+    created: "2024-08-26T10:49:47.828046-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c768020264cf22e334e8360f93394957efbd9c0450d7082baaa96defe2dd7eb7
     name: vxfuel
@@ -1646,7 +1646,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.3.3
-    created: "2024-08-26T10:31:01.440754-04:00"
+    created: "2024-08-26T10:49:47.818469-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 26c20c9b6c544a50a8a5932fedefe6f622f9f19f02fb622542413dfdcac3ef89
     name: vxfuel
@@ -1658,7 +1658,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.2.13
-    created: "2024-08-26T10:31:01.353605-04:00"
+    created: "2024-08-26T10:49:47.738417-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 24be8c142f3bc8438415921675eeac32503ba234087923fdc5969d8fe5c97a2f
     name: vxfuel
@@ -1670,7 +1670,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.2.12
-    created: "2024-08-26T10:31:01.353134-04:00"
+    created: "2024-08-26T10:49:47.738029-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: cb1fbac66bda03b8de180504796bb5d0b54025787bcff176edf771b9782ab424
     name: vxfuel
@@ -1682,7 +1682,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.2.11
-    created: "2024-08-26T10:31:01.352685-04:00"
+    created: "2024-08-26T10:49:47.737605-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: d01b144bdcb28708964aecd04849b258db0e46eecfab7712cb4cea70433b0125
     name: vxfuel
@@ -1694,7 +1694,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.2.5
-    created: "2024-08-26T10:31:01.354533-04:00"
+    created: "2024-08-26T10:49:47.739616-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 9ab72dab5781606e1c5ad259c75c081bbbc32447015d3b7932668f587d7e6f33
     name: vxfuel
@@ -1706,7 +1706,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.2.4
-    created: "2024-08-26T10:31:01.354104-04:00"
+    created: "2024-08-26T10:49:47.738829-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: dc3f4387c56a09d2c6fda3ec9d13078a94bf609a25b4f84ed7ae28337c65d2fe
     name: vxfuel
@@ -1718,7 +1718,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.85
-    created: "2024-08-26T10:31:01.352-04:00"
+    created: "2024-08-26T10:49:47.736834-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: cef2a23fa823b7808df43ece427cd7c06c32accb07ba6dafd8db4ba32192f361
     name: vxfuel
@@ -1730,7 +1730,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.85
-    created: "2024-08-26T10:31:01.349698-04:00"
+    created: "2024-08-26T10:49:47.736492-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 32a40e50b099455a1d172a257a420877705a62c86d26fe4ad909bf6e0ebf5db5
     name: vxfuel
@@ -1742,7 +1742,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.85
-    created: "2024-08-26T10:31:01.349327-04:00"
+    created: "2024-08-26T10:49:47.736148-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 4ebeaf43a82a145da748cfd22534aafdb0914e593d799c4c039b14e6c11f16ad
     name: vxfuel
@@ -1754,7 +1754,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.84
-    created: "2024-08-26T10:31:01.348955-04:00"
+    created: "2024-08-26T10:49:47.735749-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: b89bb4609ac7ec68428d59940b57028a1b5fabd1fe83036797df40407636cc37
     name: vxfuel
@@ -1766,7 +1766,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.83
-    created: "2024-08-26T10:31:01.348585-04:00"
+    created: "2024-08-26T10:49:47.73536-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 865c8a648980c04b297efd7957b21c271382b0d3b2853b4f2f9d82de4509a877
     name: vxfuel
@@ -1778,7 +1778,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.82
-    created: "2024-08-26T10:31:01.348206-04:00"
+    created: "2024-08-26T10:49:47.73497-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 39b036eec21c1c8e39f879408089dec43a46e3c2fc215e0db3cdb15854310240
     name: vxfuel
@@ -1790,7 +1790,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.81
-    created: "2024-08-26T10:31:01.34782-04:00"
+    created: "2024-08-26T10:49:47.734563-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 6be452143bef9796bb36910afe475c00fef72caeb79aa45158d2e9ee295427f0
     name: vxfuel
@@ -1802,7 +1802,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.80
-    created: "2024-08-26T10:31:01.347449-04:00"
+    created: "2024-08-26T10:49:47.731242-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 444f49513dad58153e64298c6b77899d4eaec987bd024e53985b011dae8785b7
     name: vxfuel
@@ -1814,7 +1814,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.79
-    created: "2024-08-26T10:31:01.346801-04:00"
+    created: "2024-08-26T10:49:47.730555-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: fc4330301e577a9e75503905aa265e43e72f250408dae744a9898adeb76dca29
     name: vxfuel
@@ -1826,7 +1826,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.78
-    created: "2024-08-26T10:31:01.346403-04:00"
+    created: "2024-08-26T10:49:47.730148-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 9346d35e51f46453a6844076f51e3df5e3216c98fde54911ecc2b35ab4c28f66
     name: vxfuel
@@ -1838,7 +1838,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.77
-    created: "2024-08-26T10:31:01.34401-04:00"
+    created: "2024-08-26T10:49:47.729738-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: d54a9664fce7e39e42ed72320499f571a64a7dd99ed3162a942fb3c352f67e6e
     name: vxfuel
@@ -1850,7 +1850,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.76
-    created: "2024-08-26T10:31:01.343625-04:00"
+    created: "2024-08-26T10:49:47.729304-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5d7cc7b4787d1f64dd8c407f85bf4b746148cb22d4c10a1d51fabbfa961ad482
     name: vxfuel
@@ -1862,7 +1862,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.75
-    created: "2024-08-26T10:31:01.342608-04:00"
+    created: "2024-08-26T10:49:47.728873-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 807bb5601be320f9dcb1cc6d795bf7a71e4754b9a06e0739fbfbb3b0acafeefa
     name: vxfuel
@@ -1874,7 +1874,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.74
-    created: "2024-08-26T10:31:01.342227-04:00"
+    created: "2024-08-26T10:49:47.728467-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: ef903be4beb13614cbcc34b8b333633818682eb041e7fba51cc5174ede7d42c4
     name: vxfuel
@@ -1886,7 +1886,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.73
-    created: "2024-08-26T10:31:01.341809-04:00"
+    created: "2024-08-26T10:49:47.728054-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c4db6249a0d77a4fa5b6123f1e9d0801330e441a8b940faeedfd71748e85f206
     name: vxfuel
@@ -1898,7 +1898,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.72
-    created: "2024-08-26T10:31:01.341407-04:00"
+    created: "2024-08-26T10:49:47.727487-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c13a3d4e11a2ad617a7f1aa3adf865ce86eca71fab347bcd487c02a86f725a22
     name: vxfuel
@@ -1910,7 +1910,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.71
-    created: "2024-08-26T10:31:01.341008-04:00"
+    created: "2024-08-26T10:49:47.723545-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f0841677cc929f039bb706ef97aec28bdf3d5f5c8d6f8480dcb5707e0ff46eea
     name: vxfuel
@@ -1922,7 +1922,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.70
-    created: "2024-08-26T10:31:01.340611-04:00"
+    created: "2024-08-26T10:49:47.722495-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: decf12e4bf7dbd6e62ad6e52de012b514410e4b41f86b3f4306309c924b2104a
     name: vxfuel
@@ -1934,7 +1934,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.69
-    created: "2024-08-26T10:31:01.339894-04:00"
+    created: "2024-08-26T10:49:47.721706-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 6bdb386e44a2ff671f9775eb5c529f97a6c3d63295b9e822e5e6388f9f051c90
     name: vxfuel
@@ -1946,7 +1946,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.68
-    created: "2024-08-26T10:31:01.336145-04:00"
+    created: "2024-08-26T10:49:47.721276-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f9fd3b12bd21a9bdc45d9e939c9aea29256adad84b816a9c74b5d15c5d5dab9f
     name: vxfuel
@@ -1958,7 +1958,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.67
-    created: "2024-08-26T10:31:01.335737-04:00"
+    created: "2024-08-26T10:49:47.720845-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: e51ba212105c17cd4383e1a6c32112cdb0d0f41bf362c830b2d7a4915fa29b7b
     name: vxfuel
@@ -1970,7 +1970,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.65
-    created: "2024-08-26T10:31:01.335335-04:00"
+    created: "2024-08-26T10:49:47.720413-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: bc496e0eef94b1ee5ff3837347b777debd7cc506a11c72209784392f02b16da4
     name: vxfuel
@@ -1982,7 +1982,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.64
-    created: "2024-08-26T10:31:01.334946-04:00"
+    created: "2024-08-26T10:49:47.719996-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 2f675fbaa4e7f8c368369cd37d5142f155075c474fbfa13a4f73799d201722a6
     name: vxfuel
@@ -1994,7 +1994,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.63
-    created: "2024-08-26T10:31:01.334564-04:00"
+    created: "2024-08-26T10:49:47.719581-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 44911e85bc59c7bc119f9d88966cf365e42778e119d444014ab6bfc9a4af8785
     name: vxfuel
@@ -2006,7 +2006,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.62
-    created: "2024-08-26T10:31:01.334177-04:00"
+    created: "2024-08-26T10:49:47.719187-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: ecac83b64e8bb18b34c6937817704b8d8c2c1f82674906bca3370f1349fa0141
     name: vxfuel
@@ -2018,7 +2018,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.61
-    created: "2024-08-26T10:31:01.333622-04:00"
+    created: "2024-08-26T10:49:47.71653-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 25ee00721efded998955471ba15fbfa6381a30033d941f3d76c3adae3c043069
     name: vxfuel
@@ -2030,7 +2030,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.60
-    created: "2024-08-26T10:31:01.333107-04:00"
+    created: "2024-08-26T10:49:47.715992-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 165aba1195f1237160c0b3cd6f023b072b7639b1dc14332b24716b7597f05842
     name: vxfuel
@@ -2042,7 +2042,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.59
-    created: "2024-08-26T10:31:01.332307-04:00"
+    created: "2024-08-26T10:49:47.71408-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 0573c91fe43d1fbf5cccfcb5156d446423410e2527162528b8accf79ca0ff11a
     name: vxfuel
@@ -2054,7 +2054,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.58
-    created: "2024-08-26T10:31:01.327976-04:00"
+    created: "2024-08-26T10:49:47.713262-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: a855063c5d0d06f67d5f945c2d7ffe88ab9ffc921bb015e9d11ec161965c51ad
     name: vxfuel
@@ -2066,7 +2066,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.57
-    created: "2024-08-26T10:31:01.327287-04:00"
+    created: "2024-08-26T10:49:47.712666-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 53c0f2623eb52456da945ea3e0a396462f2fe27872b5c594d20b4457c0f294ee
     name: vxfuel
@@ -2078,7 +2078,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.56
-    created: "2024-08-26T10:31:01.326709-04:00"
+    created: "2024-08-26T10:49:47.711771-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f502d4f69a0dafd56e8b345a7c6745fddf647a0f01d65b7f731ecb2cf347dd3c
     name: vxfuel
@@ -2090,7 +2090,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.55
-    created: "2024-08-26T10:31:01.326143-04:00"
+    created: "2024-08-26T10:49:47.711308-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5a564ae6e563e82f0b5e1713f55a344df934a0d3c87a62913393f72ad223619b
     name: vxfuel
@@ -2102,7 +2102,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.54
-    created: "2024-08-26T10:31:01.325242-04:00"
+    created: "2024-08-26T10:49:47.710823-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: e0376cc6b3bf77b3a8ff45fdaef6ee2157d08e84a228cd66f303225212c1ec7e
     name: vxfuel
@@ -2114,7 +2114,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.53
-    created: "2024-08-26T10:31:01.324881-04:00"
+    created: "2024-08-26T10:49:47.71038-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 17ffb2aac9479d9fd2912deb48d93d4b80d8de6355145a0747cc791398d129c8
     name: vxfuel
@@ -2126,7 +2126,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.52
-    created: "2024-08-26T10:31:01.32452-04:00"
+    created: "2024-08-26T10:49:47.707275-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 14cd6f3eb029721daefef80e83a1162cf238438a1f8e14102752d7c4d7bc34d8
     name: vxfuel
@@ -2138,7 +2138,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.51
-    created: "2024-08-26T10:31:01.324186-04:00"
+    created: "2024-08-26T10:49:47.70697-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5d761150e9879038143d067e27a86c8643e3421c4d42590a072d29bb6eb90b9e
     name: vxfuel
@@ -2150,7 +2150,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.50
-    created: "2024-08-26T10:31:01.323875-04:00"
+    created: "2024-08-26T10:49:47.706649-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 4f176cb2e66ac253e1a9dd17e464e24b73d19019438c6b02494b031908b7f390
     name: vxfuel
@@ -2162,7 +2162,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.49
-    created: "2024-08-26T10:31:01.318196-04:00"
+    created: "2024-08-26T10:49:47.705992-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 7c9f54f6d64cfe8b71042620e5f3c8b8531021de7b8c88481f6458c38733110b
     name: vxfuel
@@ -2174,7 +2174,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.48
-    created: "2024-08-26T10:31:01.317857-04:00"
+    created: "2024-08-26T10:49:47.705597-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 7b2885d0af3c5a2982f8fdb8f8ba7d2ad39bcfeee6fb879d26ddca9cd99d3bfb
     name: vxfuel
@@ -2186,7 +2186,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.47
-    created: "2024-08-26T10:31:01.317515-04:00"
+    created: "2024-08-26T10:49:47.70456-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 54cfaeeb86c02ca14c499db525595feb7297528145aa27ecf05c5970ee8cb3af
     name: vxfuel
@@ -2198,7 +2198,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.46
-    created: "2024-08-26T10:31:01.317172-04:00"
+    created: "2024-08-26T10:49:47.702229-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: dd7475c0cad680b3696d768e169a3459cdf341d93c85d2dadc2bf8f0ee51b3f2
     name: vxfuel
@@ -2210,7 +2210,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.45
-    created: "2024-08-26T10:31:01.316828-04:00"
+    created: "2024-08-26T10:49:47.701857-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 063cb3730002526193e3da446f96bb23dd8cd3b975ef586e6578af2d2381f6d9
     name: vxfuel
@@ -2222,7 +2222,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.44
-    created: "2024-08-26T10:31:01.316483-04:00"
+    created: "2024-08-26T10:49:47.701512-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: e980b4b1a20ee76c3c91cb1a86fdfb591b97d00d006de06a40caaa7568740cf1
     name: vxfuel
@@ -2234,7 +2234,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.43
-    created: "2024-08-26T10:31:01.316135-04:00"
+    created: "2024-08-26T10:49:47.697566-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 0c471cd437681572bea4476cc304b5f5ea2471840143d09d3ce40fedd77a6a21
     name: vxfuel
@@ -2246,7 +2246,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.42
-    created: "2024-08-26T10:31:01.315768-04:00"
+    created: "2024-08-26T10:49:47.697184-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 700e1b845f5b6c2096a4bce32f857377af63b13982aaba7cd618eec3c4a47562
     name: vxfuel
@@ -2258,7 +2258,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.41
-    created: "2024-08-26T10:31:01.315223-04:00"
+    created: "2024-08-26T10:49:47.696826-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 31017412fa7edbd3a7f3bb5951da1659b773e08e84a277cbe3975ac201882d0c
     name: vxfuel
@@ -2270,7 +2270,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.40
-    created: "2024-08-26T10:31:01.314828-04:00"
+    created: "2024-08-26T10:49:47.69647-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: d69db7fd99e1d12992adc38e758479643bfc0e45196f7bb0b74767bddbaca3a9
     name: vxfuel
@@ -2282,7 +2282,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.39
-    created: "2024-08-26T10:31:01.309922-04:00"
+    created: "2024-08-26T10:49:47.696107-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 129b58152765b1b38f05d362201dc1362390e1e7d4ffa654b5aa6169811d721e
     name: vxfuel
@@ -2294,7 +2294,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.36
-    created: "2024-08-26T10:31:01.309537-04:00"
+    created: "2024-08-26T10:49:47.695735-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: adfa3af1ebd67e4651b2c3b7e43b4d2f6d9d511bd02dbe3c7e2523d926b1df2d
     name: vxfuel
@@ -2306,7 +2306,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.35
-    created: "2024-08-26T10:31:01.308633-04:00"
+    created: "2024-08-26T10:49:47.69485-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 8a84dc639d551a358f896d04df378bffdd3c19379ffe097f3fff15e7fd0e373e
     name: vxfuel
@@ -2318,7 +2318,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.34
-    created: "2024-08-26T10:31:01.308154-04:00"
+    created: "2024-08-26T10:49:47.694412-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 57370e9a6274320817eeafe39905ccc42b4d60dd6af0f95163e21503d5b9518d
     name: vxfuel
@@ -2330,7 +2330,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.33
-    created: "2024-08-26T10:31:01.307691-04:00"
+    created: "2024-08-26T10:49:47.694044-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: edae1a5527ad271a0c5a77369b6ba5cbbda09e138b56970bc689431a5953b521
     name: vxfuel
@@ -2342,7 +2342,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.32
-    created: "2024-08-26T10:31:01.307399-04:00"
+    created: "2024-08-26T10:49:47.693737-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 0147d96eb609ef16e33c54b3f87c2a6fd4f3a24f134a50a370294ae8b166a3fe
     name: vxfuel
@@ -2354,7 +2354,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.31
-    created: "2024-08-26T10:31:01.307106-04:00"
+    created: "2024-08-26T10:49:47.690559-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 7592612ad7080a322fa0a45302d9fec3fd72b6f5be707a7b202e32db58a62a43
     name: vxfuel
@@ -2366,7 +2366,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.30
-    created: "2024-08-26T10:31:01.306812-04:00"
+    created: "2024-08-26T10:49:47.690282-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 234f4156fa0b992fd64630f932abe7a8755896577e81e38e9b1e7163a1675274
     name: vxfuel
@@ -2378,7 +2378,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.29
-    created: "2024-08-26T10:31:01.306268-04:00"
+    created: "2024-08-26T10:49:47.689661-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 5391b5ef9799822723e88ae55b39bbb80a7ba7a197db4c5703eb4682e107c7a3
     name: vxfuel
@@ -2390,7 +2390,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.28
-    created: "2024-08-26T10:31:01.303479-04:00"
+    created: "2024-08-26T10:49:47.68933-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 0beff4b0ba5b7d438014fea9033fee6943d58151bb0997c73c83371fe5258547
     name: vxfuel
@@ -2402,7 +2402,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.27
-    created: "2024-08-26T10:31:01.303087-04:00"
+    created: "2024-08-26T10:49:47.688906-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 39edd6c12d6eb7a9ecf3ca9275d73c92eef5f3db88d813776852d4212ed311b7
     name: vxfuel
@@ -2414,7 +2414,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.26
-    created: "2024-08-26T10:31:01.301696-04:00"
+    created: "2024-08-26T10:49:47.688442-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: a3ca5f907cffe11f0d6c6cd33edd67a5e0fa2f7e9cb9f7f32b85fd97a85082d4
     name: vxfuel
@@ -2426,7 +2426,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.25
-    created: "2024-08-26T10:31:01.301423-04:00"
+    created: "2024-08-26T10:49:47.688167-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: aaff46936cb337f6b275e5ef31957142b2f809e1256ef8d24a84f3552a7693c8
     name: vxfuel
@@ -2438,7 +2438,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.24
-    created: "2024-08-26T10:31:01.300939-04:00"
+    created: "2024-08-26T10:49:47.687849-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 38ebd0d429017a2a52c18934ab6b3dc764a26682aefee0320c764107e6232dfd
     name: vxfuel
@@ -2450,7 +2450,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.23
-    created: "2024-08-26T10:31:01.300584-04:00"
+    created: "2024-08-26T10:49:47.68748-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 62b229733e147dfd7893d9286beafb0053cee115692c69811c3bdc14a4986b81
     name: vxfuel
@@ -2462,7 +2462,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.22
-    created: "2024-08-26T10:31:01.30028-04:00"
+    created: "2024-08-26T10:49:47.687159-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 1d1f7d4884da5ebf59845345939500a36a00f3103048343dae58efbd6eab9223
     name: vxfuel
@@ -2474,7 +2474,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.21
-    created: "2024-08-26T10:31:01.299951-04:00"
+    created: "2024-08-26T10:49:47.686869-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 78668f161252fb80e1b4529801cf1682d7634cef02de0d7a460fe03f69b78b86
     name: vxfuel
@@ -2486,7 +2486,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.20
-    created: "2024-08-26T10:31:01.29967-04:00"
+    created: "2024-08-26T10:49:47.686569-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 673aa3b6a1e52a4061e192e52e344cd08ebdb7f5d95ad732b65672dbd382a8a2
     name: vxfuel
@@ -2498,7 +2498,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.19
-    created: "2024-08-26T10:31:01.294759-04:00"
+    created: "2024-08-26T10:49:47.686014-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 507f4f8512d5b1142fc43fb39c8da0108241dc943521aad1c8d714d4dcfcae1f
     name: vxfuel
@@ -2510,7 +2510,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.18
-    created: "2024-08-26T10:31:01.294441-04:00"
+    created: "2024-08-26T10:49:47.685753-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 9e6f790b9ef08cf52b064eb99a1a76baedd53ee43011727c17d02845f9313ca4
     name: vxfuel
@@ -2522,7 +2522,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.17
-    created: "2024-08-26T10:31:01.294132-04:00"
+    created: "2024-08-26T10:49:47.685481-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: f8b5d19b4f23a0447fcff7b518e54d59426bd926faf51717c29f6072ec3ad4d2
     name: vxfuel
@@ -2534,7 +2534,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.16
-    created: "2024-08-26T10:31:01.293818-04:00"
+    created: "2024-08-26T10:49:47.685186-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 92be8f38a6aa6ba13a345f6e9397101addfda4ba21b1714efc3e29d3c561f845
     name: vxfuel
@@ -2546,7 +2546,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.15
-    created: "2024-08-26T10:31:01.293503-04:00"
+    created: "2024-08-26T10:49:47.684224-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: fd71348dc568dfc93abc35450efb2536774bb9248b63b645473cbfb8cffe7121
     name: vxfuel
@@ -2558,7 +2558,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.14
-    created: "2024-08-26T10:31:01.293191-04:00"
+    created: "2024-08-26T10:49:47.68391-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: a71b8e75908f900c2b268c709b0ae5b72e33152caaf38f3b8575ed39e56f93e0
     name: vxfuel
@@ -2568,7 +2568,7 @@ entries:
     version: 0.1.14
   - apiVersion: v2
     appVersion: 0.1.12
-    created: "2024-08-26T10:31:01.292878-04:00"
+    created: "2024-08-26T10:49:47.675997-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 526ca3c1f18e217781f887492f6f70ef7245c26f4b89e19157371ddc8876c585
     name: vxfuel
@@ -2578,7 +2578,7 @@ entries:
     version: 0.1.12
   - apiVersion: v2
     appVersion: 0.1.11
-    created: "2024-08-26T10:31:01.292552-04:00"
+    created: "2024-08-26T10:49:47.675647-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 8ce28dc8f59596362f95a3632638d0418fd0c3045ad7ba9bdb2e725e02f3d073
     name: vxfuel
@@ -2588,7 +2588,7 @@ entries:
     version: 0.1.11
   - apiVersion: v2
     appVersion: 0.1.10
-    created: "2024-08-26T10:31:01.292241-04:00"
+    created: "2024-08-26T10:49:47.675276-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 98fb56fc897e4c4ecb91314041d801f6285bf9e349e32b938bc72b8c6f27aea9
     name: vxfuel
@@ -2598,7 +2598,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2024-08-26T10:31:01.352225-04:00"
+    created: "2024-08-26T10:49:47.737162-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c11b595b67eae1d5a2714cbed7458d0c26b126d3135f3c17aeba1360ff3715e8
     name: vxfuel
@@ -2608,7 +2608,7 @@ entries:
     version: 0.1.9
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2024-08-26T10:31:01.347039-04:00"
+    created: "2024-08-26T10:49:47.730796-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 69a9b53f50099547f6e32f80d3c05fb30a65ee9c7c1cc4acd1d93cd8e742d63d
     name: vxfuel
@@ -2618,7 +2618,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.7
-    created: "2024-08-26T10:31:01.340167-04:00"
+    created: "2024-08-26T10:49:47.722086-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 37e9f7b41ac4328bb065f19b0cba282b3ea71d27bf301818dcc12220a2b1da19
     name: vxfuel
@@ -2628,7 +2628,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.6
-    created: "2024-08-26T10:31:01.332653-04:00"
+    created: "2024-08-26T10:49:47.71545-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 08e2209a6d17bb0bf1031302b3c7ab50bec86232cb6db241d7f1fb593098c6d4
     name: vxfuel
@@ -2638,7 +2638,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-08-26T10:31:01.323542-04:00"
+    created: "2024-08-26T10:49:47.706274-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: c1f7b125ad0cd32c39cee1c43a7adc9deb6ba3ebec5e072eea62c59e7163afa2
     name: vxfuel
@@ -2648,7 +2648,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-08-26T10:31:01.306516-04:00"
+    created: "2024-08-26T10:49:47.689958-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: 934110ef5243303ed4079cd4d348a79a83990f644b1e3975423918e04a6ffb82
     name: vxfuel
@@ -2658,7 +2658,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-08-26T10:31:01.29939-04:00"
+    created: "2024-08-26T10:49:47.686258-04:00"
     description: vxFuel Helm chart for Kubernetes
     digest: dde22d1e491a287634bb398824e86e9613d120b640fea5da4900f8e795866aea
     name: vxfuel
@@ -2671,7 +2671,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.15
-    created: "2024-08-26T10:31:01.466163-04:00"
+    created: "2024-08-26T10:49:47.835567-04:00"
     description: vxTest Helm chart for test pod
     digest: cd0a3c13d6c8cc9e1953b654fd8391cdcecc6d4b5bb5fc5b6bf12a024e25742b
     name: vxtest
@@ -2683,7 +2683,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.14
-    created: "2024-08-26T10:31:01.465927-04:00"
+    created: "2024-08-26T10:49:47.835383-04:00"
     description: vxTest Helm chart for test pod
     digest: b431742d0777332660492b98e962b0d3d7193c8ea75b5da7391128920036c56c
     name: vxtest
@@ -2695,7 +2695,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.13
-    created: "2024-08-26T10:31:01.465146-04:00"
+    created: "2024-08-26T10:49:47.834611-04:00"
     description: vxTest Helm chart for test pod
     digest: c3ad2fb5b2361d50283158b5f4904b8d53228b871882fb2251cc2922a80c83ca
     name: vxtest
@@ -2707,7 +2707,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.12
-    created: "2024-08-26T10:31:01.464803-04:00"
+    created: "2024-08-26T10:49:47.834316-04:00"
     description: vxTest Helm chart for test pod
     digest: 4492cc41b3e22f3e6b15b491baaca84d94ca415abeb0b919f8701370ad219eaf
     name: vxtest
@@ -2719,7 +2719,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.9
-    created: "2024-08-26T10:31:01.466867-04:00"
+    created: "2024-08-26T10:49:47.836085-04:00"
     description: vxTest Helm chart for test pod
     digest: 2ca4366a01cd15635a67267c3156e7dc37e608a4b757c4ed4076fbba3bd36a8c
     name: vxtest
@@ -2731,7 +2731,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.8
-    created: "2024-08-26T10:31:01.466639-04:00"
+    created: "2024-08-26T10:49:47.835918-04:00"
     description: vxTest Helm chart for test pod
     digest: 8328395a66f2b1bb19501a8000fe091a3eb7541623caa9c2bb32ad76a6c86da9
     name: vxtest
@@ -2743,7 +2743,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.7
-    created: "2024-08-26T10:31:01.466403-04:00"
+    created: "2024-08-26T10:49:47.835744-04:00"
     description: vxTest Helm chart for test pod
     digest: 65c081be92d29801296d66c9ef432b931515bf63b12471f143d8f1e92309b8ff
     name: vxtest
@@ -2754,7 +2754,17 @@ entries:
   web-service-gin:
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.476392-04:00"
+    created: "2024-08-26T10:49:47.84512-04:00"
+    description: web-service-gin Helm chart for sg185141's test pod
+    digest: 0d21b93e70d3610e03314842c2927cc4948213fa21e17833f60b60add309551b
+    name: web-service-gin
+    type: application
+    urls:
+    - https://github.com/dp185133/jag-dock/raw/main/charts/docs/web-service-gin-0.0.32.tgz
+    version: 0.0.32
+  - apiVersion: v2
+    appVersion: 0.0.4
+    created: "2024-08-26T10:49:47.844959-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: bcfa23ec18e96017cb5c007c7011cb4bc6b2e7c8f21e6b46c327d2908e05d115
     name: web-service-gin
@@ -2764,7 +2774,7 @@ entries:
     version: 0.0.31
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.476227-04:00"
+    created: "2024-08-26T10:49:47.84469-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: 3a573298dd4a84f5699a659928aa08a8037c39253b09cbfa608012451b683751
     name: web-service-gin
@@ -2774,7 +2784,7 @@ entries:
     version: 0.0.30
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.475669-04:00"
+    created: "2024-08-26T10:49:47.843941-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: 883affce4672679e83d2f520295588e11baecd829094501175c702471a1c2379
     name: web-service-gin
@@ -2784,7 +2794,7 @@ entries:
     version: 0.0.29
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.475425-04:00"
+    created: "2024-08-26T10:49:47.843684-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: e653e03fed5eb5fb2f1e7e37c5e823612b60954157ebaf1a0b51612c04ec50e5
     name: web-service-gin
@@ -2794,7 +2804,7 @@ entries:
     version: 0.0.28
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.475172-04:00"
+    created: "2024-08-26T10:49:47.843425-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: c0ec49c9e494b4bb449c421641e3bf828df51bca5f188f57d9e1b999c1c79eaf
     name: web-service-gin
@@ -2804,7 +2814,7 @@ entries:
     version: 0.0.27
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.474928-04:00"
+    created: "2024-08-26T10:49:47.843119-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: 6e2ce5b8dfb816dc238bf07b8a81c16c7ed1bf734c2e12cebb0421e621bfe9ca
     name: web-service-gin
@@ -2814,7 +2824,7 @@ entries:
     version: 0.0.26
   - apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.474675-04:00"
+    created: "2024-08-26T10:49:47.84278-04:00"
     description: web-service-gin Helm chart for sg185141's test pod
     digest: 212172ea1d65bc7ffb0a785e448f27dbd5a1d1304d40b4bc34ae404f034bfe8c
     name: web-service-gin
@@ -2826,7 +2836,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.4
-    created: "2024-08-26T10:31:01.474419-04:00"
+    created: "2024-08-26T10:49:47.842517-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 6abd71edcca49a6d73aca9b15429de9710ed4c43b01b42fa756192413efa83fb
     keywords:
@@ -2844,7 +2854,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.474119-04:00"
+    created: "2024-08-26T10:49:47.842127-04:00"
     description: web-service-gin Helm chart for test pod
     digest: e7b601a873fba1a217ac7ae6491169d0b2fdec93fee1d219d23b05e743962cb3
     keywords:
@@ -2862,7 +2872,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.473835-04:00"
+    created: "2024-08-26T10:49:47.841702-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 1209e957483ff348374d436e7e3703a8d1eeb982f0d935484376425746777500
     keywords:
@@ -2880,7 +2890,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.473561-04:00"
+    created: "2024-08-26T10:49:47.841345-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 7f0ff91910e6b92d33686a5595c9f22101bf332776a9c22c85f6d764a8457e53
     keywords:
@@ -2898,7 +2908,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.473253-04:00"
+    created: "2024-08-26T10:49:47.841041-04:00"
     description: web-service-gin Helm chart for test pod
     digest: a570513359c6c3c7cb05cc6f966769226cbc0b251ae7818fa696b3d61e8f0a50
     keywords:
@@ -2916,7 +2926,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.47266-04:00"
+    created: "2024-08-26T10:49:47.84027-04:00"
     description: web-service-gin Helm chart for test pod
     digest: a7d86b1b29892b11fa5cc756514427eb9ccdcf4509e31d97db7bca9b417f2cfd
     keywords:
@@ -2934,7 +2944,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.472349-04:00"
+    created: "2024-08-26T10:49:47.839791-04:00"
     description: web-service-gin Helm chart for test pod
     digest: db4d87e8e3718f0404471aeca7aefe7bff92f49ae7fc707daa7c38123ada1255
     keywords:
@@ -2952,7 +2962,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2024-08-26T10:31:01.472009-04:00"
+    created: "2024-08-26T10:49:47.839147-04:00"
     description: web-service-gin Helm chart for test pod
     digest: dc98992c8291efec325a149754ea09b30736f00aaf3bbf28085269a424dc1a44
     keywords:
@@ -2970,7 +2980,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.2
-    created: "2024-08-26T10:31:01.471691-04:00"
+    created: "2024-08-26T10:49:47.838771-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 7199672ae08d4a41f9a939f903cdd4dd5aa9934aeee9ad428c9e31de3e40c05c
     keywords:
@@ -2988,7 +2998,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.471253-04:00"
+    created: "2024-08-26T10:49:47.838301-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 05259bc3ef7efa0852b3792c0720dc3650399cb7b9f1361cc8f4b7227d6b47cb
     keywords:
@@ -3006,7 +3016,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.47068-04:00"
+    created: "2024-08-26T10:49:47.837941-04:00"
     description: web-service-gin Helm chart for test pod
     digest: caadc5fb04e5f953fb9d18e46b7a09159ffa8b80a7c7cfa96ad2ae98190a206f
     keywords:
@@ -3024,7 +3034,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.470344-04:00"
+    created: "2024-08-26T10:49:47.837551-04:00"
     description: web-service-gin Helm chart for test pod
     digest: c0d6286f79f164a2ffa8630bf709c59329dd37b0a253f0061e014633717d30e8
     keywords:
@@ -3042,7 +3052,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.469968-04:00"
+    created: "2024-08-26T10:49:47.837158-04:00"
     description: web-service-gin Helm chart for test pod
     digest: c5a023dcf75c4e7429f120c72fbc3757bf83c7ec7c4f9ea0c860f6b7ba46bded
     keywords:
@@ -3060,7 +3070,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.467548-04:00"
+    created: "2024-08-26T10:49:47.836778-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 35ec1c99137d90715e88616dee45b2984556c0d7ec2d8880e9d57643cdce4b98
     keywords:
@@ -3078,7 +3088,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.47825-04:00"
+    created: "2024-08-26T10:49:47.847214-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 152317e07feba57c7160f78c55cb75df66d7b685d72acb3f507ad40d3edf29c6
     keywords:
@@ -3096,7 +3106,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.477975-04:00"
+    created: "2024-08-26T10:49:47.846941-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 1e43dfed0ed464d3009e21253cef8154389318e3cd5320ea0bea947241b8edcf
     keywords:
@@ -3114,7 +3124,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.477669-04:00"
+    created: "2024-08-26T10:49:47.846554-04:00"
     description: web-service-gin Helm chart for test pod
     digest: ff1a78f7486fa78b01f22c9488cac3c16f5a21119bf358dc5ba407ad88c6786b
     keywords:
@@ -3132,7 +3142,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.477362-04:00"
+    created: "2024-08-26T10:49:47.846169-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 7b688f63395c84b96a97ae1f1699a3b09654af8c1f67fb6fd19d4a193707ec89
     keywords:
@@ -3150,7 +3160,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.477061-04:00"
+    created: "2024-08-26T10:49:47.845861-04:00"
     description: web-service-gin Helm chart for test pod
     digest: e081806e3d2c290b3257877e825710a7d7ef36da47181604884c4365cf4bc817
     keywords:
@@ -3168,7 +3178,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.476736-04:00"
+    created: "2024-08-26T10:49:47.845457-04:00"
     description: web-service-gin Helm chart for test pod
     digest: 050c2d137caac0d565919ccc9a870377d9e134180f6022f296740c1d9f8027d6
     keywords:
@@ -3186,7 +3196,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.475967-04:00"
+    created: "2024-08-26T10:49:47.844441-04:00"
     description: web-service-gin Helm chart for test pod
     digest: c88aef68fb39d41e951cd280e483fe1f32b467a28b8558aa9ab3d56e65dd2eac
     keywords:
@@ -3204,7 +3214,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 1.1.1
-    created: "2024-08-26T10:31:01.472973-04:00"
+    created: "2024-08-26T10:49:47.840652-04:00"
     description: web-service-gin Helm chart for test pod
     digest: ae77fc1ccae4dfc5f31a963e0713848144bcfe16ea82a0aa4440e9f9b776630d
     keywords:
@@ -3222,7 +3232,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2024-08-26T10:31:01.467184-04:00"
+    created: "2024-08-26T10:49:47.836426-04:00"
     description: web-service-gin Helm chart for test pod
     digest: e4b56c8e347ca81da186f31de3565489ca96ef1ac9d08d2b1c06b1a89759f97c
     name: web-service-gin
@@ -3230,4 +3240,4 @@ entries:
     urls:
     - https://github.com/dp185133/jag-dock/raw/main/charts/docs/web-service-gin-0.0.1.tgz
     version: 0.0.1
-generated: "2024-08-26T10:31:01.285969-04:00"
+generated: "2024-08-26T10:49:47.670839-04:00"
