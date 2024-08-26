@@ -1,4 +1,4 @@
 image:
   repository: ghcr.io/sg185141_ncrvoyix
   name: web-service-gin
-  tag: "{{ .Chart.AppVersion }}"  # Use the appVersion from Chart.yaml
+  tag: "{{ .Chart.appVersion }}"  # Use the appVersion from Chart.yaml
