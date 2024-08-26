@@ -3,5 +3,5 @@ description: web-service-gin Helm chart for sg185141's test pod
 name: web-service-gin
 type: application
 
-version: 0.1.30
+version: 0.1.31
 appVersion: 0.0.4

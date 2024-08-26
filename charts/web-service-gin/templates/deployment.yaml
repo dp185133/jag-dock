@@ -20,7 +20,7 @@ spec:
         - name: sg185141reg      
       containers:
         - name: web-service-gin
-          image: "{{ .Values.image.repository }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.image.repository }}/{{ .Values.image.name }}:{{ .Chart.appVersion }}"
           imagePullPolicy: IfNotPresent          
           ports:
           - containerPort: 8080
