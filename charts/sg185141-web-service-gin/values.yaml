@@ -1,4 +1,4 @@
----
-global:
-  web-service-gin:
-    test: true
+image:
+  repository: ghcr.io/sg185141_ncrvoyix
+  name: web-service-gin
+  tag: 0.0.4

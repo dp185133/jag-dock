@@ -20,7 +20,8 @@ spec:
         - name: sg185141reg      
       containers:
         - name: web-service-gin
-          image: ghcr.io/sg185141_ncrvoyix/web-service-gin:0.0.4
+          image: "{{ .Values.image.repository }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
+          imagePullPolicy: IfNotPresent          
           ports:
           - containerPort: 8080
             name: metrics
