@@ -1,5 +1,24 @@
 apiVersion: v1
 entries:
+  this-repo-is-deprecated:
+  - annotations:
+      managed-by: ncr
+    apiVersion: v2
+    appVersion: 0.0.4
+    created: "2025-01-22T19:18:08.06273826Z"
+    description: This-repo-is-deprecated
+    digest: 7d447ad159de18f896c6a82592c27a9cfd9cecfa3940fa7319bf94d084de2266
+    keywords:
+    - retail
+    - next-gen
+    - fuel
+    name: this-repo-is-deprecated
+    sources:
+    - https://github.com/dp185133/jag-dock/tree/main/charts/this-repo-is-deprecated
+    type: application
+    urls:
+    - https://github.com/dp185133/jag-dock/raw/main/charts/docs/sthis-repo-is-deprecated.tgz
+    version: 0.0.1
   remove-from-edge-banner-immediately:
   - annotations:
       managed-by: ncr
