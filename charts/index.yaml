@@ -5,7 +5,7 @@ entries:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.0.4
-    created: "2025-01-22T19:18:08.06273826Z"
+    created: "2025-06-11T13:18:08.062388655Z"
     description: This-repo-is-deprecated
     digest: 7d447ad159de18f896c6a82592c27a9cfd9cecfa3940fa7319bf94d084de2266
     keywords:
@@ -18,18 +18,18 @@ entries:
     type: application
     urls:
     - https://github.com/dp185133/jag-dock/raw/main/charts/docs/sthis-repo-is-deprecated.tgz
-    version: 0.0.1
+    version: 1.1.1
   remove-from-edge-banner-immediately:
   - annotations:
       managed-by: ncr
     apiVersion: v2
     appVersion: 0.1.7
-    created: "2025-01-22T19:18:08.063711802Z"
+    created: "2025-06-11T13:18:08.062388655Z"
     description: remove-from-edge-banner-immediately pod Helm chart for Kubernetes
     digest: 7ef80e7a8d668c8e5d9a5884ac41582e402a9b9ae3d181e7543b8e6fd3f424ac
     name: remove-from-edge-banner-immediately
     type: application
     urls:
     - https://github.com/dp185133/jag-dock/raw/main/charts/docs/remove-from-edge-banner-immediately-0.1.7.tgz
-    version: 0.1.7
+    version: 2.2.2
 generated: "2025-06-11T13:18:08.062388655Z"
