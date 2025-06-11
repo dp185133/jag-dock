@@ -4,9 +4,9 @@ entries:
   - apiVersion: v2
     appVersion: 0.0.4
     created: "2025-01-22T19:18:08.062900503Z"
-    description: web-service-gin Helm chart for sg185141's test pod
+    description: This-repo-is-deprecated
     digest: 96098b2996a4604e805e5dbf617c59059f74369a0658fd437208b7500fb27506
-    name: sg185141-web-service-gin
+    name: A-this-repo-is-deprecated
     type: application
     urls:
     - https://github.com/dp185133/jag-dock/raw/main/charts/docs/A-this-repo-is-deprecated.tgz
@@ -16,7 +16,7 @@ entries:
     apiVersion: v2
     appVersion: 0.0.4
     created: "2025-01-22T19:18:08.06273826Z"
-    description: web-service-gin Helm chart for sg185141's test pod
+    description: This-repo-is-deprecated
     digest: 7d447ad159de18f896c6a82592c27a9cfd9cecfa3940fa7319bf94d084de2266
     keywords:
     - retail
@@ -27,7 +27,7 @@ entries:
     - https://github.com/dp185133/jag-dock/tree/main/charts/A-this-repo-is-deprecated
     type: application
     urls:
-    - https://github.com/dp185133/jag-dock/raw/main/charts/docs/sg185141-web-service-gin-0.0.1.tgz
+    - https://github.com/dp185133/jag-dock/raw/main/charts/docs/sA-this-repo-is-deprecated.tgz
     version: 0.0.1
   simpumps:
   - annotations:
